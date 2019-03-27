@@ -1,0 +1,14 @@
+{
+  "name": "lista2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "MathJax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjax": "^2.7.5"
+  }
+}

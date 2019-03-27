@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 02</title>
+
+    <style>
+        body {
+            font-size: 16px;
+        }
+
+        header, main, footer {
+            margin: 0 auto;
+            padding: 2em;
+            max-width: 1000px;
+        }
+
+        main {
+            border: 1px solid silver;
+        }
+
+        [contenteditable] {
+            border: 1px solid silver;
+            margin: 1em;
+            padding: 1em;
+        }
+
+        section h2,
+        article p {
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lista 02</h1>
+        <h2>Vanessa Martinez Tonini</h2>
+    </header>
+    <main>
+        <article>
+            <h1>Exercise 2.1.3</h1>
+            <section>
+                <h2>a) Show that, if $m \geq n$, then $G$ contains a cycle.</h2>
+                <p contenteditable></p>
+            </section>
+            <section>
+                <h2>b) For each positive integer $n$, find an acyclic graph with $n$ vertices and $n − 1$
+                edges.</h2>
+                <p contenteditable></p>
+            </section>
+        </article>
+
+        <article>
+            <h1>Exercise 2.1.17 - Triangle-free graph</h1>
+            <p>A <em>triangle-free</em> graph is one which contains no triangles. Let $G$ be a simple triangle-free graph.</p>
+            <section>
+                <h2>a) Show that $d(x) + d(y) \leq n$ for all $xy \in E$.</h2>
+                <p contenteditable></p>
+            </section>
+            <section>
+                <h2>b) Deduce that $\sum_{v \in V} d(v)^2 ≤ mn$.</h2>
+                <p contenteditable></p>
+            </section>
+            <section>
+                <h2>c) Applying the Cauchy-Schwarz Inequality<a href="#ref1">$^1$</a>, deduce that $m \leq n^2 /4$. (W. Mantel)</h2>
+                <p contenteditable></p>
+            </section>
+            <section>
+                <h2>d) For each positive integer $n$, find a simple triangle-free graph $G$ with $m = \lfloor n^2 /4 \rfloor$.</h2>
+                <p contenteditable></p>
+            </section>
+        </article>
+        
+        <article>
+            <h1>Exercise 2.2.6</h1>
+            <p>
+                Show that there is a Hamilton path between two vertices in the Petersen graph if and only if these vertices are nonadjacent.
+            </p>
+            <p contenteditable></p>
+        </article>
+
+        <article>
+            <h1>Exercise 2.2.7</h1>
+            <p>Which grids have Hamilton paths, and which have Hamilton cycles?</p>
+            <p contenteditable></p>
+        </article>
+
+        <article>
+            <h1>Exercise 2.2.13</h1>
+            <section>
+                <h2>a) Show that any two longest paths in a connected graph have a vertex in common.</h2>
+                <p contenteditable></p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <h2>References</h2>
+        <ol>
+            <li id="ref1">
+                $\sum_{i=1}^n a_i^2 \sum_{i=1}^n b_i^2 \geq (\sum_{i=1}^n a_ib_i)^2 $
+                for real numbers 
+                $a_i, b_i, 1 \leq i \leq n$.
+            </li>
+        </ol>
+    </footer>
+
+    <script src="node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+        TeX: { extensions: ["mediawiki-texvc.js"] },
+        tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
+    </script>
+                                                
+</body>
+</html>
