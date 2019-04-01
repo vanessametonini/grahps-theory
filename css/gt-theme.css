@@ -16,6 +16,10 @@ main {
     border: 1px solid silver;
 }
 
+h1 {
+    margin-top: 0;
+}
+
 [contenteditable] {
     border: 1px solid silver;
     margin: 1em;
@@ -39,4 +43,20 @@ article p {
 figure {
     margin: 0 auto;
     text-align: center;
+}
+
+
+ol.alpha {
+    list-style-type: lower-alpha;
+}
+
+ol.alpha li {
+    margin-bottom: 2em;
+}
+
+[lang="pt-br"] {
+    font-size: 1rem;
+    font-style: italic;
+    background-color: #efefef;
+    padding: .5em;
 }
