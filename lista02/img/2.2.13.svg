@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <g fill="none">
+    <path stroke="#00f" stroke-width="3.016" d="M9.984 172.318l284.158-.09"/>
+    <path stroke="#009000" stroke-width="3.016" d="M7.366 32.723l284.113-1.035"/>
+    <path stroke="red" stroke-width="4" d="M147.615 34.634s-57.925 64.465-5.606 128.93"/>
+  </g>
+  <g fill="green" stroke="#009000" stroke-width=".387" transform="translate(0 -544.094)">
+    <circle cx="14.079" cy="577.393" r="9.399"/>
+    <circle cx="146.836" cy="574.822" r="9.399"/>
+    <circle cx="283.625" cy="576.626" r="9.399"/>
+  </g>
+  <g transform="translate(0 -544.094)">
+    <circle cx="17.041" cy="715.213" r="9.399" fill="navy"/>
+    <circle cx="146.564" cy="715.803" r="9.399" fill="navy"/>
+    <circle cx="289.634" cy="716.184" r="9.399" fill="navy"/>
+    <text x="284.818" y="700.154" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="284.818" y="700.154" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">I</tspan>
+    </text>
+    <text x="7.607" y="566.884" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="7.607" y="566.884" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">J</tspan>
+    </text>
+    <text x="151.545" y="649.96" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="151.545" y="649.96" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">K</tspan>
+    </text>
+    <text x="156.157" y="565.016" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="156.157" y="565.016" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">a</tspan>
+    </text>
+    <text x="156.157" y="565.016" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="156.157" y="565.016" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">a</tspan>
+    </text>
+    <text x="157.091" y="731.784" font-family="sans-serif" font-size="15.48" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="157.091" y="731.784" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">b</tspan>
+    </text>
+    <text x="25.826" y="570.154" font-family="sans-serif" font-size="7.5" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="25.826" y="570.154" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '"><tspan font-size="15">J</tspan>1</tspan>
+    </text>
+    <text x="259.861" y="570.154" font-family="sans-serif" font-size="7.5" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="259.861" y="570.154" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '"><tspan font-size="15">J</tspan>2</tspan>
+    </text>
+    <text x="26.293" y="706.091" font-family="sans-serif" font-size="7.5" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="26.293" y="706.091" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '"><tspan font-size="15">I</tspan>1</tspan>
+    </text>
+    <text x="264.532" y="709.361" font-family="sans-serif" font-size="7.5" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="264.532" y="709.361" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '"><tspan font-size="15">I</tspan>2</tspan>
+    </text>
+  </g>
+</svg>

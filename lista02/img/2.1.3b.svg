@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <g transform="translate(0 -852.362)">
+    <path fill="none" stroke="#000" d="M64.65 958.418l187.888-1.01M217.183 898.819l-132.33 122.229"/>
+    <path fill="none" stroke="#000" stroke-width=".94" d="M82.308 896.776l147.016 125.304"/>
+    <circle cx="155.311" cy="957.66" r="8.334"/>
+    <circle cx="216.93" cy="900.587" r="8.334"/>
+    <circle cx="249.76" cy="957.155" r="8.334"/>
+    <circle cx="230.062" cy="1020.29" r="8.334"/>
+    <circle cx="87.126" cy="1018.269" r="8.334"/>
+    <circle cx="66.418" cy="960.186" r="8.334"/>
+    <circle cx="84.6" cy="897.051" r="8.334"/>
+    <text x="143.234" y="991.872" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="143.234" y="991.872" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">1</tspan></tspan>
+    </text>
+    <text x="228.76" y="915.812" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="228.76" y="915.812" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">2</tspan></tspan>
+    </text>
+    <text x="92.422" y="894.515" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="92.422" y="894.515" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">3</tspan></tspan>
+    </text>
+    <text x="28.529" y="972.096" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="28.529" y="972.096" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">4</tspan></tspan>
+    </text>
+    <text x="62.739" y="1049.677" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="62.739" y="1049.677" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">5</tspan></tspan>
+    </text>
+    <text x="244.356" y="1048.663" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="244.356" y="1048.663" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">6</tspan></tspan>
+    </text>
+    <text x="267.498" y="969.054" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="267.498" y="969.054" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">v<tspan font-size="17.585">n</tspan></tspan>
+    </text>
+    <text x="243.35" y="1000.999" font-family="sans-serif" font-size="80.389" font-weight="400" letter-spacing="0" style="line-height:125%" transform="scale(1.00394 .99607)" word-spacing="0">
+      <tspan x="243.35" y="1000.999" font-family="Times New Roman" font-size="35.17" style="-inkscape-font-specification:'Times New Roman, '">...</tspan>
+    </text>
+  </g>
+</svg>

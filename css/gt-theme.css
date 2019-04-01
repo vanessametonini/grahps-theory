@@ -1,0 +1,42 @@
+body {
+    font-size: 16px;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    padding: 1.6em 2em;
+    max-width: 1000px;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    border: 1px solid silver;
+}
+
+[contenteditable] {
+    border: 1px solid silver;
+    margin: 1em;
+    padding: 1em;
+}
+
+p {
+    text-indent: 1em;
+}
+
+h2 + p {
+    padding-left: 1em;
+}
+
+section h2,
+article p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+figure {
+    margin: 0 auto;
+    text-align: center;
+}

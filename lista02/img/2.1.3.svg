@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">
+  <g transform="translate(0 -752.362)">
+    <g transform="translate(43.333 -5.307)">
+      <path fill="none" stroke="#000" stroke-width="3" d="M81.84 881.244v-84.32h93.412z"/>
+      <circle cx="79.359" cy="887.03" r="13.227"/>
+      <circle cx="81.013" cy="796.924" r="13.227"/>
+      <circle cx="178.559" cy="798.578" r="13.227"/>
+      <circle cx="164.505" cy="874.63" r="13.227"/>
+    </g>
+    <text x="30.586" y="804.364" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" transform="translate(26.8 -9.44)" word-spacing="0">
+      <tspan x="30.586" y="804.364" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">S</tspan>
+    </text>
+    <circle cx="257.505" cy="1032.936" r="13.64"/>
+    <g>
+      <path fill="none" stroke="#000" stroke-width="3" d="M134.746 954.816H259.57v81.013H131.44z"/>
+      <circle cx="136.812" cy="955.23" r="13.64"/>
+      <circle cx="257.505" cy="955.23" r="13.64"/>
+      <circle cx="131.026" cy="1031.282" r="13.64"/>
+      <circle cx="88.039" cy="987.469" r="13.64"/>
+      <text x="38.026" y="952.336" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+        <tspan x="38.026" y="952.336" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">W</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

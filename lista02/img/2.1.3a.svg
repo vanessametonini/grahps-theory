@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180">
+  <g transform="translate(67.333 -821.669)">
+    <circle cx="31.146" cy="974.949" r="13.227"/>
+    <circle cx="31.013" cy="852.924" r="13.227"/>
+    <circle cx="180.559" cy="852.578" r="13.227"/>
+    <circle cx="183.786" cy="976.549" r="13.227"/>
+    <path fill="none" stroke="#000" stroke-width="3" d="M188.132 851.83H29.413l-.827 124 165.332.826"/>
+  </g>
+  <text x=".586" y="928.364" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" transform="translate(26.8 -881.802)" word-spacing="0">
+    <tspan x=".586" y="928.364" font-family="Times New Roman" style="-inkscape-font-specification:'Times New Roman, '">G</tspan>
+  </text>
+</svg>
