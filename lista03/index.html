@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-    <h1>MAC5770 - Introdução à Teoria dos Grafos. <br> Exercise List 3</h1>
+    <h1>MAC5770 - Introdução à Teoria dos Grafos. <strong>Exercise List 3</strong></h1>
     <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
     <p>10.04.2019</p>
 </header>
@@ -17,13 +17,33 @@
         <h1>Exercise 3.1.2</h1>
         <section>
             <p>
-                Let $G$ be a graph with vertex set $V$ and adjacency matrix $A = (a_uv)$. Show that the number of $uv$-walks of length $k$ in $G$ is the $(u,v)$ entry of $A^k$.
+                Let $G$ be a graph with vertex set $V$ and adjacency matrix $A = (a_{uv})$. Show that the number of $uv$-walks of length $k$ in $G$ is the $(u,v)$ entry of $A^k$.
             </p>
             <p lang="pt-br">
-                Sendo $G$ um grafo com um conjunto de vértices $V$ e matriz de adjacência $A = (a_uv)$. Mostre que o número de $uv$-walks de tamanho $k$ em $G$ é um valor $(u,v)$ de $A^k$.
+                Sendo $G$ um grafo com um conjunto de vértices $V$ e matriz de adjacência $A = (a_{uv})$. Mostre que o número de $uv$-walks de tamanho $k$ em $G$ é um valor $(u,v)$ de $A^k$.
             </p>
-            <p contenteditable>
-            
+            <p>
+            Por definição de matriz de adjacência $a_{ij}=1$ se existe uma caminhada de comprimento 1 entre $v_i$ e $v_j$, caso contrário $a_{ij}=0$.
+            </p>
+            <h4>Hipótese de indução</h4>
+            <p>
+                Seja $b_{ij}=A^n$, $b_{ij}$ representa a quantidade de caminhadas de comprimento $n$ entre $v_i$ e $v_j$.
+            </p>
+            <h4>Tese de indução</h4>
+            <p>
+                Deixemos mostrar que o número de caminhadas de comprimento $n+1$ entre $v_i$ e $v_j$ é a $(i,j)$ entrada de $A^{n+1}$
+            </p>
+            <p>
+                Seja $A^{n+1} = c_{ij}$
+                $$
+                    c_{ij} = A^{n+1} = (A^{n+1})_{ij} = \sum_{m=1}^n a_{im} b_{mj}
+                $$
+                $b_{mj}$ é o número de caminhadas de comprimento $n$ entre $v_m$ e $v_j$. 
+                <br>
+                $a_{im}$ é o número de caminhadas de comprimento 1 entre $v_i$ e $v_m$.
+            </p>
+            <p>
+                Assim $\sum_{m=1}^n a_{im} b_{mj}$ representa quantidade de caminhadas de comprimento $n+1$ entre $v_i$ e $v_j$.
             </p>
         </section>
     </article>
@@ -38,7 +58,7 @@
 
         </p>
 
-        ref:https://www.youtube.com/watch?v=9R_9QLWWkpg
+        <!-- ref:https://www.youtube.com/watch?v=9R_9QLWWkpg -->
     </article>
     <article>
         <h1>Exercise 3.1.7 - Diameter</h1>
@@ -50,30 +70,71 @@
             <li>
                 Let $G$ be a simple graph of diameter greater than three. Show that $\overline{G}$ has diameter less than three.
                 <p lang="pt-br">
-                    Sendo $G$ um grafo simples de diâmetro maior que três. Mostre que $\overline{G}$ o diâmetro menor que três.
+                    Sendo $G$ um grafo simples de diâmetro maior que três. Mostre que $\overline{G}$ tem o diâmetro menor que três.
                 </p>
                 <p contenteditable>
-                
+                    sendo $u$ e $v$ ser qualquer dois vertices de $G$
+                case 1:
+                se $uv$
+
+                caso 2:
+
+
                 </p>
+                <p>
+                    <strong>definição:</strong>
+                    dizemos que um grafo $G$ tem a propriedade $x$, se e somente se para toda aresta $xy \in E$ exite um vértice em $V$ que não adjacente a $x$ e $y$.
+                </p>
+                <p>
+                    <strong>proposição</strong> <br>
+                    se um grafo tem a propriedade $x$ então seu complementar tem diâmetro 2.
+                </p>
+                <p>
+                    <strong>prova</strong> <br>
+                    Seja $x$ e $y$ $\in v(G)$ <br>
+                    $x$ e $y$ não são adjacentes, então $d_{\overline G}(x,y) = 1$ <br>
+                    Se $x$ e $y$ forem adjacentes então, como $G$ tem a propriedade $x$, existe um $z$ tal que $xz$ e $yz \notin E(g)$ entao $xz E \overline G$, 
+                </p>
+
+                <p>
+                    <strong>proposição</strong> <br>
+                    se d(G) > 3 então o grafo tem propriedade x.
+                </p>
+                <p>
+                    <strong>prova</strong> <br>
+                    existe um caminho de comprimento 4. 
+                    <br>
+                    para todas as arestas de $x$ e $y$ eu tenho a propriedade $x$. pois se $w$ tivesse uma aresta em $x$ ou $y$, eu teria um caminho menor. 
+                    <br>
+                    suponhamos que nem $u$ nem $v$ sejam adjacentes a $x$, entao a prova esta concluída.
+                    <br>
+                    suponhamos que $u$ e $x$ são adjacentes , então $ut \notin E$
+                </p>
+
+                *toda aresta que nao ta no grafo, ta no complementar
             </li>
             <li>
                 Deduce that every self-complementary graph has diameter at most three.
                 <p lang="pt-br">
-                    Deduza que cada grafo auto-complementar tem um diâmetro de pelo menos três.
+                    Deduza que cada grafo auto-complementar* tem um diâmetro de pelo menos três.
+                    <small>auto-complementar: isomorfo ao seu complemento</small>
                 </p>
-                ref:
-                http://mathworld.wolfram.com/Self-ComplementaryGraph.html
+                <!-- ref:
+                http://mathworld.wolfram.com/Self-ComplementaryGraph.html -->
                 <p contenteditable>
-                
+                    Consideremos $D(G) > 3$: <br>
+                    $$
+                        D(G) \gt 3 => D(\overline G) \lt 3
+                    $$
                 </p>
             </li>
             <li>
                 For $k = 0, 1, 2, 3$, give an example of self-complementary graph of diameter $k$, if there is one.
                 <p lang="pt-br">
-                    Para $k = 0, 1, 2, 3$, dê um exemplo de grafo auto-complementar com diâmetro $k$, se existir um.
+                    Para $k = 0, 1, 2, 3$, dê um exemplo de um grafo auto-complementar com diâmetro $k$, se existir um.
                 </p>
                 <p contenteditable>
-                
+                    aqui só justificar para $k=1$ pois é infinito
                 </p>
             </li>
         </ol>
@@ -82,12 +143,44 @@
         <h1>Exercise 3.1.10</h1>
         <p>If the <em>girth</em> of a graph is at least $2k$, show that its diameter is at least $k$.</p>
         <p lang="pt-br">
-            Se o <em>girth</em> de um grafo é ao menos $2k$, mostre que seu diâmetro é pelo mnos $k$
+            Se o <em>girth</em> de um grafo é ao menos $2k$, mostre que seu diâmetro é pelo menos $k$
         </p>
-        ref: https://pt.wikipedia.org/wiki/Cintura_(teoria_dos_grafos)
-        <p contenteditable>
-        
+        <!-- ref: https://pt.wikipedia.org/wiki/Cintura_(teoria_dos_grafos) -->
+        <p>
+            <strong>Girth</strong> é o comprimento do menor ciclo do grafo (é um número).
         </p>
+        <p> 
+            $$g = girth(G) d= diametro(G)$$
+            $$g \geq 2k => d \geq k $$
+        </p>
+        <p>
+            Suponhamos por absurdo que: <br>
+            $$d \leq k-1$$
+            $$d+1 \leq k$$
+            $$2d+2 \leq 2k \leq g$$
+            $$g \geq 2d+2$$
+            $$g \gt 2d+1$$
+        </p>
+        <p>
+            Seja $c$ um g-ciclo em $G$ com vértices consecutivos $x_0,x_1,...,x_{g-1}$. 
+        </p>
+        <p>
+            Consideremos o caminho $Pc$ sobre o ciclo $c$, como sendo o caminho mínim entre $x_0$ e $x_{d+1}$. Se $g=2d+2$ existe
+            dois caminhos mínimos entre $x_0$ e $x_{d+1}$ se $g \gt 2d +2$ p caminho $Pc$ e definido de forma única. De qualquer
+            maneira podemos difinir $Pc$ como o caminho com vértices consecutivos $x_0,x_1,...,x_{d+1}$.
+            <br>
+            Seja $t = d(x_0,x_{d+1})$ e seja $P$ o caminho $(y_0 = x_0) y_1, y_2,...y_t(x_d+1)$. Por definição de diâmetro, $t \leq d$.
+        </p>
+        <p>
+            Seja $j$ o menor número tal que $x_j \neq y_j$. $j$ de fato existe caso contrário, $P$ e $Pc$ seriam iguais, absurdo eles comprimento diferente.
+        </p>
+        <p>
+            Entre os valores estritamente maiores que $j$, seja $k$ o primeiro valor tal que $x_n = y_k$ para algum $m \leq d+1$. De fato $k$ existe pois $y = (x_d+1)$ está no ciclo.
+        </p>
+        <p>
+            <strong>Prova</strong> <em>to do ... :p</em>
+        </p>
+
     </article>
     <article>
         <h1>Exercise 3.3.1</h1>
@@ -106,6 +199,14 @@
 </main>
 <footer>
     <h2>References</h2>
+    <ol>
+        <li>https://www.youtube.com/watch?v=9R_9QLWWkpg</li>
+        <li>https://www.youtube.com/watch?v=VTgxv334KSU</li>
+        <li>http://mathworld.wolfram.com/Self-ComplementaryGraph.html</li>
+        <li>https://pt.wikipedia.org/wiki/Cintura_(teoria_dos_grafos)</li>
+        <li>http://www.gpec.ucdb.br/pistori/disciplinas/discreta/aulas/geulham.htm</li>
+        <li>https://www.ime.usp.br/~yw/2018/grafinhos/aulas/cap2-pag2.pdf</li>
+    </ol>
 </footer>
 
 <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
@@ -115,5 +216,4 @@
     tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
 </script>
 </body>
-
 </html>

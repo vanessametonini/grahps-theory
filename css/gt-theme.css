@@ -1,10 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+@media print {
+    body {
+        font-size: 14px;
+    }
 }
 
 header, main, footer {
     margin: 0 auto;
-    padding: 1.6em 2em;
+    padding: 1.4em;
     max-width: 1000px;
 }
 
@@ -12,12 +24,24 @@ header {
     text-align: center;
 }
 
+header p {
+    margin: 0;
+}
+
 main {
     border: 1px solid silver;
+    margin-top: 0;
 }
 
 h1 {
-    margin-top: 0;
+    font-size: 1.8em;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+h1 strong {
+    display: block;
+    font-size: 1.2em;
 }
 
 [contenteditable] {
@@ -30,7 +54,7 @@ p {
     text-indent: 1em;
 }
 
-h2 + p {
+main h2 + p {
     padding-left: 1em;
 }
 
@@ -55,8 +79,9 @@ ol.alpha li {
 }
 
 [lang="pt-br"] {
+    background-color: #efefef;
+    border-bottom: 1px dashed #666;
     font-size: 1rem;
     font-style: italic;
-    background-color: #efefef;
     padding: .5em;
 }
