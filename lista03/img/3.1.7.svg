@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <g transform="translate(0 -852.362)">
+    <path fill="none" stroke="#646464" stroke-width="2.129" d="M189.137 901.095l-95.431-.512"/>
+    <path fill="none" stroke="#000" stroke-width="3" d="M238.649 997.561l-191.93-.505"/>
+    <circle cx="95.838" cy="899.703" r="8.207" fill="#323200"/>
+    <circle cx="187.257" cy="899.955" r="8.207" fill="#323200"/>
+    <text x="29.294" y="884.929" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="29.294" y="884.929" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">G</tspan>
+    </text>
+    <text x="31.062" y="969.025" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="31.062" y="969.025" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">G</tspan>
+    </text>
+    <text x="32.325" y="854.625" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="32.325" y="854.625" font-size="30">_</tspan>
+    </text>
+    <circle cx="49.371" cy="996.172" r="8.207" fill="#323200"/>
+    <circle cx="92.05" cy="996.172" r="8.207" fill="#323200"/>
+    <circle cx="137.254" cy="996.172" r="8.207" fill="#323200"/>
+    <circle cx="233.977" cy="996.172" r="8.207" fill="#323200"/>
+    <circle cx="182.964" cy="996.172" r="8.207" fill="#323200"/>
+    <text x="87.378" y="926.093" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="87.378" y="926.093" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">u</tspan>
+    </text>
+    <text x="182.08" y="925.841" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="182.08" y="925.841" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">v</tspan>
+    </text>
+    <text x="227.032" y="1026.33" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="227.032" y="1026.33" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">t</tspan>
+    </text>
+    <text x="177.029" y="1025.825" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="177.029" y="1025.825" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">w</tspan>
+    </text>
+    <text x="127.279" y="1026.351" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="127.279" y="1026.351" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">z</tspan>
+    </text>
+    <text x="82.075" y="1026.098" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="82.075" y="1026.098" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">y</tspan>
+    </text>
+    <text x="42.426" y="1025.846" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="42.426" y="1025.846" font-family="Times New Roman" font-size="30" style="-inkscape-font-specification:'Times New Roman, '">x</tspan>
+    </text>
+  </g>
+</svg>

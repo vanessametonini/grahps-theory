@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -70,48 +70,39 @@
             <li>
                 Let $G$ be a simple graph of diameter greater than three. Show that $\overline{G}$ has diameter less than three.
                 <p lang="pt-br">
-                    Sendo $G$ um grafo simples de diâmetro maior que três. Mostre que $\overline{G}$ tem o diâmetro menor que três.
+                    Sendo $G$ um grafo simples de diâmetro maior que três. Mostre que $\overline{G}$ tem o diâmetro menor que três. 
                 </p>
-                <p contenteditable>
-                    sendo $u$ e $v$ ser qualquer dois vertices de $G$
-                case 1:
-                se $uv$
-
-                caso 2:
-
-
-                </p>
+                <h4>Definição:</h4>
                 <p>
-                    <strong>definição:</strong>
-                    dizemos que um grafo $G$ tem a propriedade $x$, se e somente se para toda aresta $xy \in E$ exite um vértice em $V$ que não adjacente a $x$ e $y$.
+                    Dizemos que um grafo $G$ tem a propriedade $x$, se e somente se para toda aresta $xy \in E$ existe um vértice em $V$ que não adjacente à $x$ e $y$.
                 </p>
+                <h4>Caso 1:</h4>
                 <p>
-                    <strong>proposição</strong> <br>
-                    se um grafo tem a propriedade $x$ então seu complementar tem diâmetro 2.
+                    Se um grafo tem a propriedade $x$ então seu complementar tem diâmetro 2.
                 </p>
+                <h4>Prova</h4>
                 <p>
-                    <strong>prova</strong> <br>
-                    Seja $x$ e $y$ $\in v(G)$ <br>
+                    Seja $x$ e $y$ $\in V(G)$; <br>
                     $x$ e $y$ não são adjacentes, então $d_{\overline G}(x,y) = 1$ <br>
-                    Se $x$ e $y$ forem adjacentes então, como $G$ tem a propriedade $x$, existe um $z$ tal que $xz$ e $yz \notin E(g)$ entao $xz E \overline G$, 
+                    Se $x$ e $y$ forem adjacentes então, como $G$ tem a propriedade $x$, existe um $z$ tal que $xz$ e $yz \notin E(G)$ então $xz$ e $yx \in E(\overline G)$, 
                 </p>
 
+                <h4>Caso 2:</h4>
                 <p>
-                    <strong>proposição</strong> <br>
-                    se d(G) > 3 então o grafo tem propriedade x.
+                    Se $D(G) \gt 3$ então o grafo tem propriedade $x$.
                 </p>
+                <h4>Prova</h4>
                 <p>
-                    <strong>prova</strong> <br>
-                    existe um caminho de comprimento 4. 
+                    Existe um caminho de comprimento 4. Para todas as arestas de $x$ e $y$ temos tenho a propriedade $x$. Pois se $w$ tivesse uma aresta em $x$ ou $y$, existiria um caminho menor. 
                     <br>
-                    para todas as arestas de $x$ e $y$ eu tenho a propriedade $x$. pois se $w$ tivesse uma aresta em $x$ ou $y$, eu teria um caminho menor. 
+                    Supondo que nem $u$ nem $v$ sejam adjacentes a $x$, então a prova esta concluída.
                     <br>
-                    suponhamos que nem $u$ nem $v$ sejam adjacentes a $x$, entao a prova esta concluída.
-                    <br>
-                    suponhamos que $u$ e $x$ são adjacentes , então $ut \notin E$
+                    Supondo que $u$ e $x$ são adjacentes, então $ut \in E$ e $vt \notin E$.
                 </p>
-
-                *toda aresta que nao ta no grafo, ta no complementar
+                <figure>
+                    <img src="img/3.1.7.svg" alt="">
+                </figure>
+                <!-- *toda aresta que não está no grafo, está no complementar -->
             </li>
             <li>
                 Deduce that every self-complementary graph has diameter at most three.
@@ -121,7 +112,7 @@
                 </p>
                 <!-- ref:
                 http://mathworld.wolfram.com/Self-ComplementaryGraph.html -->
-                <p contenteditable>
+                <p>
                     Consideremos $D(G) > 3$: <br>
                     $$
                         D(G) \gt 3 => D(\overline G) \lt 3
@@ -133,7 +124,7 @@
                 <p lang="pt-br">
                     Para $k = 0, 1, 2, 3$, dê um exemplo de um grafo auto-complementar com diâmetro $k$, se existir um.
                 </p>
-                <p contenteditable>
+                <p>
                     aqui só justificar para $k=1$ pois é infinito
                 </p>
             </li>
@@ -149,12 +140,13 @@
         <p>
             <strong>Girth</strong> é o comprimento do menor ciclo do grafo (é um número).
         </p>
+        <h4>Definições:</h4>
         <p> 
-            $$g = girth(G) d= diametro(G)$$
+            $g = girth(G)$ e $d= diametro(G)$
             $$g \geq 2k => d \geq k $$
         </p>
         <p>
-            Suponhamos por absurdo que: <br>
+            Vamos supor por absurdo que: <br>
             $$d \leq k-1$$
             $$d+1 \leq k$$
             $$2d+2 \leq 2k \leq g$$
@@ -162,17 +154,17 @@
             $$g \gt 2d+1$$
         </p>
         <p>
-            Seja $c$ um g-ciclo em $G$ com vértices consecutivos $x_0,x_1,...,x_{g-1}$. 
+            Seja $c$ um $g-ciclo$ em $G$ com vértices consecutivos $x_0,x_1,...,x_{g-1}$. 
         </p>
         <p>
-            Consideremos o caminho $Pc$ sobre o ciclo $c$, como sendo o caminho mínim entre $x_0$ e $x_{d+1}$. Se $g=2d+2$ existe
-            dois caminhos mínimos entre $x_0$ e $x_{d+1}$ se $g \gt 2d +2$ p caminho $Pc$ e definido de forma única. De qualquer
+            Considerando o caminho $Pc$ sobre o ciclo $c$, como sendo o caminho mínimo entre $x_0$ e $x_{d+1}$. Se $g=2d+2$ existem
+            dois caminhos mínimos entre $x_0$ e $x_{d+1}$ se $g \gt 2d +2$ o caminho $Pc$ e definido de forma única. De qualquer
             maneira podemos difinir $Pc$ como o caminho com vértices consecutivos $x_0,x_1,...,x_{d+1}$.
             <br>
             Seja $t = d(x_0,x_{d+1})$ e seja $P$ o caminho $(y_0 = x_0) y_1, y_2,...y_t(x_d+1)$. Por definição de diâmetro, $t \leq d$.
         </p>
         <p>
-            Seja $j$ o menor número tal que $x_j \neq y_j$. $j$ de fato existe caso contrário, $P$ e $Pc$ seriam iguais, absurdo eles comprimento diferente.
+            Seja $j$ o menor número tal que $x_j \neq y_j$. $j$ de fato existe caso contrário, $P$ e $Pc$ seriam iguais, o que é um absurdo pois devem ter comprimentos diferentes.
         </p>
         <p>
             Entre os valores estritamente maiores que $j$, seja $k$ o primeiro valor tal que $x_n = y_k$ para algum $m \leq d+1$. De fato $k$ existe pois $y = (x_d+1)$ está no ciclo.
