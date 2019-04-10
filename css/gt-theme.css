@@ -1,87 +1,127 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-}
-
-@media print {
-    body {
-        font-size: 14px;
-    }
+  font-size: 16px;
+  line-height: 1.8em;
+  margin: 0;
+  padding: 0;
 }
 
 header, main, footer {
-    margin: 0 auto;
-    padding: 1.4em;
-    max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.4em;
+  max-width: 1000px;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 header p {
-    margin: 0;
+  margin: 0;
 }
 
 main {
-    border: 1px solid silver;
-    margin-top: 0;
+  border: 1px solid silver;
+  margin-top: 0;
 }
 
 h1 {
-    font-size: 1.8em;
-    line-height: 1.6em;
-    margin: 0;
+  font-size: 1.8em;
+  line-height: 1.6em;
+  margin: 0;
 }
 
 h1 strong {
-    display: block;
-    font-size: 1.2em;
+  display: block;
+  font-size: 1.2em;
 }
 
+figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+[lang="pt-br"] + figure {
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+img {
+  max-width: 100%;;
+}
+
+ol.alpha {
+  list-style-type: lower-alpha;
+  margin-bottom: 0;
+}
+
+article,
+ol.alpha li {
+  padding-bottom: 2em;
+}
+
+ol.alpha li:last-child {
+  padding-bottom: 0;
+}
+
+/* estilos de paragrafos */
 [contenteditable] {
-    border: 1px solid silver;
-    margin: 1em;
-    padding: 1em;
+  border: 1px solid silver;
+  margin: 1em;
+  padding: 1em;
 }
 
 p {
-    text-indent: 1em;
+  text-indent: 1em;
 }
 
 main h2 + p {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 section h2,
 article p {
-    font-weight: 300;
-    font-size: 1.2em;
-}
-
-figure {
-    margin: 0 auto;
-    text-align: center;
-}
-
-
-ol.alpha {
-    list-style-type: lower-alpha;
-}
-
-ol.alpha li {
-    margin-bottom: 2em;
+  font-weight: 300;
+  font-size: 1.2em;
 }
 
 [lang="pt-br"] {
-    background-color: #efefef;
-    border-bottom: 1px dashed #666;
-    font-size: 1rem;
-    font-style: italic;
-    padding: .5em;
+  border-bottom: 1px dashed #ccc;
+  font-size: .9rem;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-bottom: 1.8em;
+  padding: .5em;
+}
+
+h2 + [lang="pt-br"],
+p + [lang="pt-br"] {
+  margin-top: -20px;
+}
+
+section p:first-of-type,
+h1 + p {
+  margin-top: 0;
+}
+/* fim estilos de paragrafos */
+
+@media print {
+  body {
+      font-size: 14px;
+  } 
+  
+  header, main, footer {
+      padding: 0;
+  }
+
+  header h2 {
+    margin: .5em 0;
+  }
+
+  main {
+      border: 0;
+  }
 }
