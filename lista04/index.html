@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 04</title>
+    <link rel="stylesheet" href="../css/gt-theme.css">
+</head>
+
+<body>
+    <header>
+        <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Exercise List 4</strong></h1>
+        <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
+        <p>24.04.2019</p>
+    </header>
+    <main>
+        <article>
+            <h1>Exercise 4.1.2</h1>
+            <p>Show that the following three statements are equivalent.</p>
+            <ol class="alpha">
+                <li>$G$ is connected and has $n−1$ edges.</li>
+                <li>$G$ is a forest and has $n−1$ edges.</li>
+                <li>$G$ is a tree.</li>
+            </ul>
+        </article>
+        <article>
+            <h1>Exercise 4.1.3</h1>
+            <p>A <em>saturated hydrocarbon</em> is a molecule $C_mH_n$ in which every carbon atom ($C$) has four bonds, every hydrogen atom $(H)$ has one bond, and no sequence of bonds forms a cycle. Show that, for any positive integer m, the molecule $C_mH_n$ can exist only if $n = 2m + 2$.</p>
+        </article>
+        <article>
+            <h1>Exercise 4.1.5</h1>
+            <p>Prove Theorem 4.3<a href="#thm1">$^1$</a> by induction on the number of edges of $G$.</p>
+        </article>
+        <article>
+            <h1>Exercise 4.1.7</h1>
+            <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if $\sum_{i=1}^n d_i= 2(n-1)$.</p>
+        </article>
+        <article>
+            <h1>Exercise 4.2.11 - <span class="sml-caps">Prüfer code</span></h1>
+            <p>
+                Let $K_n$ be the labelled complete graph with vertex set $ \{1, 2, . . . , n\} $, where $n \geq 3$. With each spanning tree $T$ of $K_n$ one can associate a unique sequence $(t1,t2,...,tn−2)$, known as the <em>Prüfer</em> code of $T$, as follows. Let $s_1$ denote the first vertex (in the the ordered set $(1,2,...,n)$ which is a leaf of $T$, and let $t_1$ be the neighbour of $s_1$ in $T$. Now let $s_2$ denote the first vertex which is a leaf of $T-s_1$, and $t_2$ the neighbour of $s_2$ in $T−s_1$. Repeat this operation until $t_n−2$ is defined and a tree with just two vertices remains. (If $n \leq 2$, the Prüfer code of $T$ is taken to be the empty sequence.)
+            </p>
+            <ol class="alpha">
+                <li>
+                    List all the spanning trees of $K_4$ and their Prüfer codes.
+                </li>
+                <li>
+                    Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code of a unique spanning tree of $K_n$.
+                </li>
+                <li>
+                    Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
+                </li>
+            </ol>
+            <footer>
+                (H. Prüfer)
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <h2>References</h2>
+        <p><em>Date</em>: April 11, 2019.</p>
+        <ol>
+            <li id="thm1"><strong>Theorem 4.3</strong> If $T$ is a tree, then $e(T) = v(T) − 1$.</li>
+            <li id="thm2"><strong>Theorem 4.8</strong> (<span class="sml-caps">Cayley’s formula</span>) The number of labelled trees on $n$ vertices is $n^{n−2}$.</li>
+        </ol>
+    </footer>
+
+    <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { extensions: ["mediawiki-texvc.js"] },
+      tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
+    </script>
+</body>
+
+</html>
