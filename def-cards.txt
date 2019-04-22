@@ -1,0 +1,62 @@
+1 Graph; A graph G consists of V(G), a set of vertices (also called nodes) E(G) a set of edges.
+2 Simple graph; A simple graph has no loops
+3 Degree; The degree of any vertex v (of G) is the number of edges that are incident with v.
+4 Neighborhood; The neighborhood of a vertex v is the set of all vertices of G, which are share an edge with v := NG (v)
+5 k-regular graph; A graph G is k-regular if (deg(v) = k for all v ∈ V. A regular graph is one that is k-regular for some k. Kn := the complete graph  on n vertices
+6 Star graph; A star graph is a complete bipartite graph G[X, Y] with X=1or Y=1
+7 Grid graph; Is a bipartite graph ??
+8 Isomorphic graphs; Two graphs G1 and G2 are isomorphic if there is a 1-1, an to fn  from V(G1 ) to V(G2 ), s.t. preserves adjacency
+9 Planar graph; A planar graph is graph that can be drawn in the plane s.t. edge can meet only at their corresponding vertices (no intersecting edge are allowed)
+10 Subgraph; A subgraph F of a graph G, is a graph that uses a subset of vertices of G, s.t. V(F) V(G) and E(F) E(G)
+11 Eigenvalue; An eigenvalue of a matrix M is a (complex) number given by Mx = x, where x is a vertex (and set of complex numbers)
+12 Walk; A walk in a graph G is a sequence of nodes (vertices) W=v0e1v1e2v2...vl-1elvl .Where the terms are alternating vertices and edges of G, not necessary distinct s.t. vi-1 and v1 are the end points of li, 1, <= i <=l 
+13 Path; A path is G is a walk which does not repeat any vertices. Fact: [Mk]ij = number of walks in the graph G of length k, from vertex i to vertex j
+14 Cycle; A cycle in G is a closed path (so is requires at least 3 vertices). Theorem: Let G be a graph in which all vertices have degree at least two. Then G contains a cycle.
+15 Hamiltonian path; A Hamiltonian path is a path that travers all the vertices (nodes) of V.
+16 Hamiltonian cycle; A Hamiltonian cycle is a cycle that passes through each vertex of G, exactly once
+17 Face; A face is defined by a minimal cycle in the graph G. By definition, the autor region of the planar graph always a face
+18 Chord; A chord is a subgraph of a cycle is on edge (or a path) of G formed by two nonadjacent relative to the cycle vertices of the cycle
+19 K-connected graph; A graph is called k-connected if we need to remove >= k edges to disconnected it
+20 Spanning subgraph; A spanning subgraph of G is a subgraph of G obtained by edge deletion (removing some edges).Um subgrafo gerador de G, é um subgrafo de G que contém todos os seus vértices
+21 Induced subgraph; An induced subgraph of G is subgraph obtained by vertex deletion
+22 Hamiltonian graph; A graph G is Hamiltonian means G has a Hamiltonian cycle
+23 Genus; The genus of a graph is the smallest g, s.t. we can draw the graph on a surface of genus g, without intersecting edges.
+24 Distance; The distance between any 2 vertices in G is the length of shortest path connecting u and v
+24 Diameter; The diameter is the largest distance between any 2 vertices of G.
+25 Girth; The girth of G is the length of a shortest cycle in G
+26 Euler trail; An Euler trail is a walk that passes exactly once through each edge of G
+27 Euler tour; An Euler tour is a walk that passes exactly once through each edge of G, but is also a closed path
+28 Even graph; A graph whose vertex degree are all even, is called an even graph
+29 Proper coloring; A proper coloring of the vertices of a graph has the property that the end points of each edge always have different colors
+30 K-coloring; A k-coloring of G is a proper (vertex) coloring that only uses k colors
+31 Tree graph; A tree is an acyclic (a graph with no cycles), connected graph 
+32 Leaf; A leaf of a tree is a vertex of edge 1
+33 Forest; A forest is an acyclic graph. (Then a forest is a disjoint union of trees)
+34 Subtree; A subtree of G is a subgraph of G, which is a tree
+35 Spanning tree; A spanning tree for G is a subtree of G, which is also a spanning subgraph
+36 Isomorphism; An isomorphism between two graphs G1 and G2 is a bijection : V(G1)-> V(G2), s.t. uv ∈ E(G1) <=> (u)(v)∈(G2)
+37 Automorphism; An automorphism of a graph G is an isomorphism from G to G (itself -  unlabelled)
+38 Bipartite graph*; A graph if its vertex set can be partitioned into two subset X and Y so that  every edge has one end in X and one end in Y
+39 Complete graph*; A complete graph is a simples graph which any two vertices are adjacent
+40 Bipartite Complete graph; 
+41 Empty graph*; An empty graph one in which no two vertices adjacent
+42 Connected graph*; A graph is connected if, for every partition of its vertex set into two nonempty sets X and Y, there is an edge with one end in X and one end in Y
+43 Disconnected graph*; A graph is disconnected if its vertex set can be partitioned in two nonempty subsets X and Y so that no edge has onde end in X and one end in Y
+44 K-partite graph (and complete k-partite)*; A k-partite graph is one whose vertex set can be partitioned into k subsets, or parts, in such a way that no edges has both ends in the same part. A k-partite graph is complete if any two vertices in different parts are adjacent
+45 Turán graph*; A simple complete k-partite graph on n vertices whose parts are of equal or almost equal sizes (that is, floor (n/k) or ceiling (n/k)) is called Turan graph and denoted Tk, n 
+46 Complement of a graph*; The complement of G is the simple graph whose vertex set is V and whose edges are the pairs of nonadjacent vertices of G
+47 N-cube (hypercube) graph*; The n-cube Qn (n>=1) is the graph whose vertex set is the set of all n-tuples of 0s and 1s, where two tuples are adjacent if they differ in precisely one coordinate
+48 Self-complementary* graph; A simple graph is self-complementary if it is isomorphic to its complement
+49 Adjacency Matrix*; The adjacency matrix of G is the n x m matrix AG:= (auv), where auv is the number of edges joining vertices u and v, each loop counting two edges
+50 Triangle-free graph* ; A triangle-free graph is one which contains no triangles
+51 Maximum independent set; A maximum independent set is a set of vertices, no two of which are connected by edge, and this set has maximum cardinality (size)
+52 Stability number (independent number); The stability number (independent number) of a graph G is the size of a maximum independent set (in G).
+53 Independent set; A independent set is a set of vertices, no two of which are connected by an edge
+54 Clique; A clique in a subgraph G isomorphic to Kl  (any l)
+55 Clique number; The clique number of a graph G is the size of a largest clique in G
+56 Claw-free graph; A graph G is called claw-free if G does not contain a claw (drawn) as a induced subgraph.
+57 Chromatic number; Chromatic number of a graph G is the smallest number of colors, called (G), we need to color the vertices of G, s. t. no two vertices which are neighbors have same color
+58 Proper coloring; A proper coloring of G is a coloring of its vertices s. t. no two neighboring get the same color
+59 Matching; A matching is a collection of edges of g, which do not overlap (overlap means sharing a vertex)
+60 Complete matching; A complete matching in G (bipartite graph with |V2| >= |V1|) is a matching s. t. each vertex in V1 gets covered (by some edge of the matching)
+61 Perfect matching; A perfect matching for any G is a collection of disjoint edges that cover all vertices of G

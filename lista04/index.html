@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -17,12 +17,55 @@
     <main>
         <article>
             <h1>Exercise 4.1.2</h1>
-            <p>Show that the following three statements are equivalent.</p>
-            <ol class="alpha">
-                <li>$G$ is connected and has $n−1$ edges.</li>
-                <li>$G$ is a forest and has $n−1$ edges.</li>
-                <li>$G$ is a tree.</li>
-            </ul>
+            <section>
+                <p>Show that the following three statements are equivalent.</p>
+                <ol class="alpha">
+                    <li>$G$ is connected and has $n−1$ edges.</li>
+                    <li>$G$ is a forest and has $n−1$ edges.</li>
+                    <li>$G$ is a tree.</li>
+                </ol>
+            </section>
+            <section>
+                <!-- <h3>Lema: Uma árvore é um grafo conectado e sem ciclos.</h3>
+                <p>
+                    
+                </p> -->
+                <h3>Prova</h3>
+                <h4>Caso $c \rightarrow a$. Se um grafo $G$ é uma árvore, então $G$ possui $n−1$ arestas</h4>
+                <h5>Base</h5>
+                <p>
+                    Dada uma árvore $G$ com $n=2$ e $m = n-1$ portanto $m=1$. Vamos supor que seja possível obter o mesmo resultado para uma árvore com $n-1$ vértices.
+                </p>
+                <h5>Hipótese de Indução</h5>
+                <p>
+                    Para um grafo $G$ que é uma árvore com $n-1$ vértices, esta deverá ter então $n-2$ arestas.
+                </p>
+                <p>
+                    Este resultado deve ser válido também para uma árvore de $n$ vértices.
+                </p>
+                <h5>Tese de Indução</h5>
+                <p>
+                    Sendo $T$ uma árvore de $n$ vértices, esta possui então $n-1$ arestas.
+                </p>
+                <p>
+                    Removendo um vértice $l$ de $T$ vamos obter $T'$, portanto $T' = T-l$.
+                </p>
+                <p>
+                    Assim, $T'$ é um grafo conectado, pois, sendo $a$ e $z$ dois vértices de $T'$, existe um caminho de $a$ para $z$, e o mesmo ocorre em $T$. Este caminho em $T$ não contém $l$, pois em $T'$, $l$ não existe, e não seria possível haver um caminho entre $a$ e $z$ em $T'$ caso $l$ estivesse neste caminho e fosse removido, formando um grafo desconectado, o que é um absurdo.
+                </p>
+                <p>
+                    Com isto, $T'$ é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
+                </p>
+
+                <h4>Caso $a \rightarrow b$. $G$ é uma floresta e contém $n-1$ arestas. </h4>
+                ($G$ is connected and has $n−1$ edges. $G$ is a forest and has $n−1$ edges.)
+                <p>
+                    Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um novo grafo $G'$, e de maneira que este permaneça conectado, assim formando uma árvore, podemos dizer pelo item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um absurdo que $G_n = n-1 > G'_n = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
+                </p>
+
+                <h4>Caso $b \rightarrow c$. </h4>
+                ($G$ is a forest and has $n−1$ edges. $G$ is a tree.)
+            </section>
         </article>
         <article>
             <h1>Exercise 4.1.3</h1>
