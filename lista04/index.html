@@ -54,17 +54,34 @@
                     Assim, $T'$ é um grafo conectado, pois, sendo $a$ e $z$ dois vértices de $T'$, existe um caminho de $a$ para $z$, e o mesmo ocorre em $T$. Este caminho em $T$ não contém $l$, pois em $T'$, $l$ não existe, e não seria possível haver um caminho entre $a$ e $z$ em $T'$ caso $l$ estivesse neste caminho e fosse removido, formando um grafo desconectado, o que é um absurdo.
                 </p>
                 <p>
-                    Com isto, $T'$ é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
+                    Com isto, é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
                 </p>
 
                 <h4>Caso $a \rightarrow b$. $G$ é uma floresta e contém $n-1$ arestas. </h4>
                 ($G$ is connected and has $n−1$ edges. $G$ is a forest and has $n−1$ edges.)
                 <p>
-                    Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um novo grafo $G'$, e de maneira que este permaneça conectado, assim formando uma árvore, podemos dizer pelo item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um absurdo que $G_n = n-1 > G'_n = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
+                    Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um novo grafo $G'$, e de maneira que este permaneça conectado, e assim formando uma árvore, podemos dizer pelo item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um absurdo que $G_n = n-1 \gt G'_n = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
+                </p>
+                <p>
+                    $n_{(G)} = n-1 \gt n_{(G')} = n-1$
                 </p>
 
-                <h4>Caso $b \rightarrow c$. </h4>
-                ($G$ is a forest and has $n−1$ edges. $G$ is a tree.)
+                <h4>Caso $b \rightarrow c$. $G$ é uma floresta e tem $n-1$ arestas, portanto $G$ é uma árvore.</h4>
+                <p>
+                    Numa primeira suposição, onde a floresta $G$ contivesse $n$ vértices e também $n$ arestas, já seria refutada por absurdo, pois um grafo com $m = n$ contém um ciclo, e uma floresta não contém ciclos.
+                </p>
+                <p>
+                    Para isto vamos provar que se $G$ não contém ciclos, e que é uma árvore, ou seja um grafo conectado, como mostrado no primeiro caso.
+                </p>
+                <p>
+                    Se $G$, por contradição, fosse um grafo desconectado, onde $k$ a quantidade de suas componentes, conectadas e acíclicas (assim como $G$), então este contém $G_1, G_2,..., G_k$, onde $k \geq 2$.
+                </p>
+                <p>
+                    Para tornar este grafo conectado devemos adicionar 1 aresta conetando uma componente a outra. Porém estas arestas adicionadas devem ser no total de $k-1$ para não fechar um ciclo.
+                </p>
+                <p>
+                    Com a adição destas arestas, para tornar $G$ conectado, o resultado da soma das arestas de $G$ é de $n-1+k-1 = m$, o que é um absurdo, desde que este deve conter $n-1$ arestas.
+                </p>
             </section>
         </article>
         <article>
