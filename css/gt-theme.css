@@ -63,6 +63,11 @@ ol.alpha li {
   padding-bottom: 2em;
 }
 
+
+ol.alpha.enumciado li {
+  padding-bottom: 0;
+}
+
 ol.alpha li:last-child {
   padding-bottom: 0;
 }
@@ -82,7 +87,11 @@ main h2 + p {
   padding-left: 1em;
 }
 
-section h2,
+section h2 {
+  font-weight: 300;
+  font-size: 1.6em;
+}
+
 article p {
   font-weight: 300;
   font-size: 1.2em;
