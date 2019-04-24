@@ -31,36 +31,40 @@
         <h3>Caso $c \rightarrow a$. Se um grafo $G$ é uma árvore, então é conectado e $G$ possui $n−1$ arestas</h3>
         <h4>Base</h4>
         <p>
-          Dada uma árvore $G$ com $n=2$ e $m = n-1$ portanto $m=1$. Vamos supor que seja possível obter o mesmo
-          resultado para uma árvore com $n-1$ vértices.
+          A única árvore com $n=2$ vértices é a árvore $K_2$ que possui $m=n-1=1$ aresta. Vamos supor que seja possível
+          obter o mesmo resultado para uma árvore com $n-1$ vértices.
         </p>
         <h4>Hipótese de Indução</h4>
         <p>
           Para um grafo $G$ que é uma árvore com $n-1$ vértices, esta deverá ter então $n-2$ arestas.
         </p>
         <p>
-          Este resultado deve ser válido também para uma árvore de $n$ vértices.
+          Devemos mostrar que este resultado é válido também para uma árvore de $n$ vértices.
         </p>
         <h4>Tese de Indução</h4>
         <p>
           Sendo $T$ uma árvore de $n$ vértices, esta possui então $n-1$ arestas.
         </p>
         <p>
-          Removendo um vértice $l$ de $T$ vamos obter $T'$, portanto $T' = T-l$.
+          A árvore $T$ deve conter uma folha, de fato, as extremidades de um caminho mais longo em $T$ tem grau 1, caso
+          contrário, deveriam ser adjacentes a outro vértice do caminho, formando um ciclo. Assim,
+          removendo uma folha $f$ de $T$ vamos obter $T'$, portanto $T' = T-f$.
         </p>
         <p>
           Assim, $T'$ é um grafo conectado, pois, sendo $a$ e $z$ dois vértices de $T'$, existe um caminho de $a$ para
-          $z$, e o mesmo ocorre em $T$. Este caminho em $T$ não contém $l$, pois em $T'$, $l$ não existe, e não seria
-          possível haver um caminho entre $a$ e $z$ em $T'$ caso $l$ estivesse neste caminho e fosse removido, formando
-          um grafo desconectado, o que é um absurdo.
+          $z$ em $T$. Este caminho em $T^\prime$ não contém $l$ como extremidade, pois em $T'$, $f$ não existe. E não
+          seria possível haver um caminho entre $a$ e $z$ passando por $f$, caso contrário, $f$ teria grau de mínimo 2.
         </p>
         <p>
-          Com isto, é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
+          Com isto, é evidente que $T'$ é uma árvore com $n-1$ vértices, e portanto pela hipótese de indução, $T^\prime$
+          possui $n-2$ arestas. A árvore $T$ possui 1 aresta a mais que $T^\prime$, pois ${\rm deg}(f)=1$, portanto, $T$
+          possui $(n-2)+1=n-1$ arestas.
         </p>
 
         <h3>Caso $a \rightarrow b$. $G$ é uma floresta e contém $n-1$ arestas. </h3>
         <p>
-          Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um
+          Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta por vez de cada ciclo, a fim de
+          formar um
           novo grafo $G'$, e de maneira que este permaneça conectado, e assim formando uma árvore, podemos dizer pelo
           item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um
           absurdo que $n_{G} = n-1 \gt n_{G'} = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
@@ -68,44 +72,44 @@
         <h3>Caso $b \rightarrow c$. $G$ é uma floresta e tem $n-1$ arestas, portanto $G$ é uma árvore.</h3>
         <!-- <pre>
                     i) G have n-1 edges doesn't imply that all vertices are connected by an edge.  <br>
-                    ii) G have all vertices connected by an
-                    edge doesn't imply that G is connected.
+                    ii) G have all vertices connected by an edge doesn't imply that G is connected.
                 </pre> -->
         <p>
-          Numa primeira suposição, onde a floresta $G$ contivesse $n$ vértices e também $n$ arestas, já seria refutada
-          por absurdo, pois um grafo com $m = n$ contém um ciclo, e uma floresta não contém ciclos.
+          Suponhamos que $G$, por contradição, fosse um grafo desconectado. Seja $G_1, G_2,..., G_k$ suas componentes,
+          conectadas e acíclicas, onde $k \geq 2$. Desta forma, o número de arestas de $G$ é dado por
+
+          $$
+          \begin{align}
+          m=& m_1 + m_2 +\cdots + m_k
+          \\m & = (n_1-1)+(n_2-1)+\cdots+(n_k-1)
+          \\m & = n-k \leq n-2
+          \end{align}
+          $$
+
+          O que é um absurdo, pois, $m=n-1$.
         </p>
-        <p>
-          Para isto vamos provar que se $G$ não contém ciclos, e que é uma árvore, ou seja um grafo conectado, como
-          mostrado no primeiro caso.
-        </p>
-        <p>
-          Se $G$, por contradição, fosse um grafo desconectado, onde $k$ a quantidade de suas componentes, conectadas e
-          acíclicas (assim como $G$), então este contém $G_1, G_2,..., G_k$, onde $k \geq 2$.
-        </p>
-        <p>
-          Para tornar este grafo conectado devemos adicionar 1 aresta conetando uma componente a outra. Porém estas
-          arestas adicionadas devem ser no total de $k-1$ para não fechar um ciclo.
-        </p>
-        <p>
-          Com a adição destas arestas, para tornar $G$ conectado, o resultado da soma das arestas de $G$ é de $n-1+k-1 =
-          m$, o que é um absurdo, desde que este deve conter $n-1$ arestas.
-        </p>
+
       </section>
     </article>
 
     <article>
       <h1>Exercise 4.1.3</h1>
-      <p>A <em>saturated hydrocarbon</em> is a molecule $C_mH_n$ in which every carbon atom ($C$) has four bonds, every hydrogen atom $(H)$ has one bond, and no sequence of bonds forms a cycle. Show that, for any positive integer $m$, the molecule $C_mH_n$ can exist only if $n = 2m + 2$.</p>
+      <p>A <em>saturated hydrocarbon</em> is a molecule $C_mH_n$ in which every carbon atom ($C$) has four bonds, every
+        hydrogen atom $(H)$ has one bond, and no sequence of bonds forms a cycle. Show that, for any positive integer
+        $m$, the molecule $C_mH_n$ can exist only if $n = 2m + 2$.</p>
       <section>
         <h3>Prova</h3>
         <p>Por indução do número de carbonos $m$ e o número de ligações $n$ a cada carbono adicionado.</p>
         <h4>Base</h4>
         <p>
-          Traduzindo a molécula do hidrocarboneto saturado em um grafo $G$, podemos dizer que o conjunto de vértices é definido pelo número de átomos portanto: $|V_G|=m+n$, e o conjunto de arestas pelo número de ligações $|E_G|=m+n-1$.
+          Traduzindo a molécula do hidrocarboneto saturado em um grafo $G$, podemos dizer que o conjunto de vértices é
+          definido pelo número de átomos portanto: $|V_G|=m+n$, e o conjunto de arestas pelo número de ligações
+          $|E_G|=m+n-1$.
         </p>
         <p>
-          Para $m=1$, é trivial que $CH_4$, ou seja, um grafo com $n=4+1$ vértices e $m=(4+1)-1$ arestas. Sabendo que pela sua condição de molécula, não tem ciclos, podemos caracterizar este grafo como uma árvore.
+          Para $m=1$, é trivial que $CH_4$, ou seja, um grafo com $1$ carbono, $2 \cdot 1 + 2$ hidrogênios,
+          $|V_G|=4+1=5$ vértices e $|E_G|=(4+1)-1=4$ arestas. Sabendo que pela sua condição de molécula, não tem ciclos,
+          podemos caracterizar este grafo como uma árvore.
         </p>
         <h4>Hipótese de Indução</h4>
         <p>
@@ -113,25 +117,31 @@
         </p>
         <h4>Tese de Indução</h4>
         <p>
-          Ao adicionarmos mais um carbono, por se tratar de um hidrocarboneto saturado, este monocarbono deve fazer exatamente quatro ligações únicas com hidrogênios, e então obtemos o subgrafo:
+          Ao adicionarmos mais um carbono, por se tratar de um hidrocarboneto saturado, este monocarbono deve fazer
+          exatamente quatro ligações únicas com hidrogênios, e então obtemos o subgrafo:
         </p>
         <figure>
           <img src="img/ch4-mol.svg" alt="Molécula de CH4" style="width: 100px; padding:0 10px;">
         </figure>
         <p>
-          Por outro lado, acabamos de ver que $CH_4$ é uma árvore, portanto $C_mH_{2m+2}$ também é uma árvore, logo por definição, há no máximo uma aresta entre dois quaisquer vértices. Com isto, para cada átomo de carbono adicionado à $C_mH_{2m+2}$ devemos adicionar apenas mais 2 átomos de hidrogênio e transferimos 1. Ou seja, é adicionado apenas mais dois 2 vértices (hidrogênios) a cada caborno adicionado.
+          Por outro lado, acabamos de ver que $CH_4$ é uma árvore, portanto $C_mH_{2m+2}$ também é uma árvore, logo por
+          definição, há no máximo uma aresta entre dois quaisquer vértices. Com isto, para cada átomo de carbono
+          adicionado à $C_mH_{2m+2}$ devemos adicionar apenas mais 2 átomos de hidrogênio e transferimos 1. Ou seja, é
+          adicionado apenas mais dois 2 vértices (hidrogênios) a cada caborno adicionado.
         </p>
         <p>
-          Caso contrário, se fosse adicionado apenas 1 vértice, o carbono não faria 4 ligações com os hidrogênios, se adicionássemos três ou mais, haveria um hidrogênio com duas ligações, ou um carbono com 5 ligações, o que é um absurdo.
+          Caso contrário, se fosse adicionado apenas 1 vértice, o carbono não faria 4 ligações com os hidrogênios, se
+          adicionássemos três ou mais, haveria um hidrogênio com duas ligações, ou um carbono com 5 ligações, o que é um
+          absurdo.
         </p>
         <p>
           Portanto neste o hidrocarboneto terá $m+1$ carbonos e,
           $$
-            \begin{align}
-            & 2m + 2 + 2
-            \\ & = 2(m+1)+2
-            \\ & = n+1
-            \end{align}
+          \begin{align}
+          & 2m + 2 + 2
+          \\ & = 2(m+1)+2
+          \\ & = n+1
+          \end{align}
           $$
           hidrogênios, ou seja: $C_mH_{2(m+2)+2}$.
         </p>
@@ -154,53 +164,48 @@
         </p>
         <h4>Base</h4>
         <p>
-          Se $e(T)=1$, então saberemos que $T$ conterá $v(T)=2$ vértices. Portanto encontraremos: 
-          $$
-            \begin{align}
-              m & = v(T)-e(T)
-              \\ & = 2-1
-              \\ & = 1
-            \end{align}
-          $$
+          Se $e(T)=1$, então saberemos que $T$ conterá $v(T)=2$ vértices. Portanto, $e(T)=v(T)−1=1$.
         </p>
-        <p>
-          Com isto, vamos supor que este resultado seja válido para qualquer árvore de $m$ arestas menor que $n$.
-        </p>
+
         <h4>Hipótese de Indução</h4>
         <p>
-          Sendo $A$ uma árvore com $m \lt k$ sendo $k \lt n-1$.
-        </p>
-        <p>
-          Devemos mostrar que a afirmação é válida para uma árvore com $m=n-1$ arestas.
-        </p>
+          Com isto, vamos supor que este resultado seja válido para qualquer árvore de $k < n$ vértices e $k-1 < n-1=m$ arestas. 
+        </p> 
+            
         <h4>Tese de Indução</h4>
         <p>
-          Dada uma árvore $T$ com $n+1$ arestas. Sendo $T'$ um subgrafo de $T$ com $n$ arestas, portanto $v(T')-e(T')=1$.
+          Devemos mostrar que a afirmação é válida para uma árvore com $n$ vértices e $m=n-1$ arestas.
+        </p>
+        <p>
+          Se uma aresta de $T$ for removida, a árvore será desconectada em duas componentes conexas,$T_1$ e $T_2$, que satisfazem a hipótese de indução. Desta forma, o número de arestas de $T$ será:
+          $$
+            \begin{align}
+            m &= m_1+m_2+1\\
+              &= (n_1-1)+(n_2-1)+1\\
+              &= (n_1+n_2)-1\\
+            \therefore m &= n-1.\\
+            \end{align}                    
+          $$
         </p>
       </section>
-      <p>
-        Agora claramente nos temos $e(T) = e(T')+1$.
-
-        De outra forma, deve existir uma aresta em $T-T'$ que deve compartilhar pelo menos um vértice com $T'$ (senão um
-        ciclo será formado pela nova aresta e qualquer caminho em $T'$ conectando dois vértices com o fim de uma nova
-        aresta são conectadas - como um caminho existisse por causa que $T'$ é conectado).
-
-        Portanto $v(T) = v(T')+1$.
-      </p>
     </article>
 
     <article>
       <h1>Exercise 4.1.7</h1>
-      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if $\sum_{i=1}^n d_i= 2(n-1)$.</p>
+      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if
+        $\sum_{i=1}^n d_i= 2(n-1)$.</p>
       <section>
         <h2>Prova</h2>
         <h4>Base</h4>
         <p>
-          Se uma sequência $(d_1, d_2,..., d_n)$ é uma sequência de graus de uma árvore $T$, para encontrar o grau de um vértice usamos $\sum_{i=1}^n d_i= 2|E|$, porém para uma árvore seria $\sum_{i=1}^n d_i= 2(n-1)$, pois $|E|=n-1$.
+          Se uma sequência $(d_1, d_2,..., d_n)$ é uma sequência de graus de uma árvore $T$, para encontrar o grau de um
+          vértice usamos $\sum_{i=1}^n d_i= 2|E|$, porém para uma árvore seria $\sum_{i=1}^n d_i= 2(n-1)$, pois
+          $|E|=n-1$.
         </p>
         <h4>Hipótese de Indução</h4>
         <p>
-          Vamos construir uma árvore para obter a sequência de graus dada. Uma árvore com $n=2$, seria trivial pois $d_1=d_2=1$, e podemos tomar esta única aresra como nossa árvore e com esta sequência de graus.
+          Vamos construir uma árvore para obter a sequência de graus dada. Uma árvore com $n=2$, seria trivial pois
+          $d_1=d_2=1$, e podemos tomar esta única aresra como nossa árvore e com esta sequência de graus.
         </p>
         <p>
           Agora precisamos provar que isto é verdade para cada $n=i$
@@ -208,12 +213,15 @@
 
         <h4>Tese de Indução</h4>
         <p>
-          Deve haver um $i$ no qual $d_i=1$, se não $\sum_{i=1}^n d_i \geq 2n$. Então assumindo que $d_n=2$. Deve haver um $i$ no qual $d_i \leq 2n$, senão $\sum_{i=1}^n d_i = n \lt 2(n-1)$.
+          Deve haver um $i$ no qual $d_i=1$, se não $\sum_{i=1}^n d_i \geq 2n$. Então assumindo que $d_n=2$. Deve haver
+          um $i$ no qual $d_i \leq 2n$, senão $\sum_{i=1}^n d_i = n \lt 2(n-1)$.
         </p>
         <p>
-          Assumindo que $d_{n-1} \geq 2$. Agora consideramos a sequência $(d'_1 = d_1,...,d'_{n-1})$. Mas então adicionando o vértice $n$ e a aresta $(n-1,n)$ em $T'$ cria uma árvore $T$ com a sequência de grau $(d_1, d_2,..., d_n)$.
+          Assumindo que $d_{n-1} \geq 2$. Agora consideramos a sequência $(d'_1 = d_1,...,d'_{n-1})$. Mas então
+          adicionando o vértice $n$ e a aresta $(n-1,n)$ em $T'$ cria uma árvore $T$ com a sequência de grau $(d_1,
+          d_2,..., d_n)$.
         </p>
-        
+
       </section>
     </article>
 
@@ -236,7 +244,8 @@
         </li>
         <li>
           <h2>
-            Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code of a unique spanning tree of $K_n$.
+            Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer
+            code of a unique spanning tree of $K_n$.
           </h2>
         </li>
         <li>
