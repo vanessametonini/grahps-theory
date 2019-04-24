@@ -63,6 +63,9 @@ ol.alpha li {
   padding-bottom: 2em;
 }
 
+ol.alpha.enumciado {
+  margin-top: 0;
+}
 
 ol.alpha.enumciado li {
   padding-bottom: 0;
@@ -85,6 +88,11 @@ p {
 
 main h2 + p {
   padding-left: 1em;
+}
+
+h1 + section > h2:first-of-type {
+  margin-top: -.1em;
+  margin-bottom: .2em;
 }
 
 section h2 {

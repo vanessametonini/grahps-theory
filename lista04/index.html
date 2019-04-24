@@ -2,140 +2,241 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista 04</title>
-    <link rel="stylesheet" href="../css/gt-theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista 04</title>
+  <link rel="stylesheet" href="../css/gt-theme.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Exercise List 4</strong></h1>
-        <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
-        <p>24.04.2019</p>
-    </header>
-    <main>
-        <article>
-            <h1>Exercise 4.1.2</h1>
-            <section>
-                <p>Show that the following three statements are equivalent.</p>
-                <ol class="alpha enumciado">
-                    <li>$G$ is connected and has $n−1$ edges.</li>
-                    <li>$G$ is a forest and has $n−1$ edges.</li>
-                    <li>$G$ is a tree.</li>
-                </ol>
-            </section>
-            <section>
-                <h2>Prova</h2>
-                <h3>Caso $c \rightarrow a$. Se um grafo $G$ é uma árvore, então é conectado e $G$ possui $n−1$ arestas</h3>
-                <h4>Base</h4>
-                <p>
-                    Dada uma árvore $G$ com $n=2$ e $m = n-1$ portanto $m=1$. Vamos supor que seja possível obter o mesmo resultado para uma árvore com $n-1$ vértices.
-                </p>
-                <h4>Hipótese de Indução</h4>
-                <p>
-                    Para um grafo $G$ que é uma árvore com $n-1$ vértices, esta deverá ter então $n-2$ arestas.
-                </p>
-                <p>
-                    Este resultado deve ser válido também para uma árvore de $n$ vértices.
-                </p>
-                <h4>Tese de Indução</h4>
-                <p>
-                    Sendo $T$ uma árvore de $n$ vértices, esta possui então $n-1$ arestas.
-                </p>
-                <p>
-                    Removendo um vértice $l$ de $T$ vamos obter $T'$, portanto $T' = T-l$.
-                </p>
-                <p>
-                    Assim, $T'$ é um grafo conectado, pois, sendo $a$ e $z$ dois vértices de $T'$, existe um caminho de $a$ para $z$, e o mesmo ocorre em $T$. Este caminho em $T$ não contém $l$, pois em $T'$, $l$ não existe, e não seria possível haver um caminho entre $a$ e $z$ em $T'$ caso $l$ estivesse neste caminho e fosse removido, formando um grafo desconectado, o que é um absurdo.
-                </p>
-                <p>
-                    Com isto, é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
-                </p>
+  <header>
+    <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Exercise List 4</strong></h1>
+    <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
+    <p>24.04.2019</p>
+  </header>
+  <main>
+    <article>
+      <h1>Exercise 4.1.2</h1>
+      <section>
+        <h2>Show that the following three statements are equivalent.</h2>
+        <ol class="alpha enumciado">
+          <li>$G$ is connected and has $n−1$ edges.</li>
+          <li>$G$ is a forest and has $n−1$ edges.</li>
+          <li>$G$ is a tree.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Prova</h2>
+        <h3>Caso $c \rightarrow a$. Se um grafo $G$ é uma árvore, então é conectado e $G$ possui $n−1$ arestas</h3>
+        <h4>Base</h4>
+        <p>
+          Dada uma árvore $G$ com $n=2$ e $m = n-1$ portanto $m=1$. Vamos supor que seja possível obter o mesmo
+          resultado para uma árvore com $n-1$ vértices.
+        </p>
+        <h4>Hipótese de Indução</h4>
+        <p>
+          Para um grafo $G$ que é uma árvore com $n-1$ vértices, esta deverá ter então $n-2$ arestas.
+        </p>
+        <p>
+          Este resultado deve ser válido também para uma árvore de $n$ vértices.
+        </p>
+        <h4>Tese de Indução</h4>
+        <p>
+          Sendo $T$ uma árvore de $n$ vértices, esta possui então $n-1$ arestas.
+        </p>
+        <p>
+          Removendo um vértice $l$ de $T$ vamos obter $T'$, portanto $T' = T-l$.
+        </p>
+        <p>
+          Assim, $T'$ é um grafo conectado, pois, sendo $a$ e $z$ dois vértices de $T'$, existe um caminho de $a$ para
+          $z$, e o mesmo ocorre em $T$. Este caminho em $T$ não contém $l$, pois em $T'$, $l$ não existe, e não seria
+          possível haver um caminho entre $a$ e $z$ em $T'$ caso $l$ estivesse neste caminho e fosse removido, formando
+          um grafo desconectado, o que é um absurdo.
+        </p>
+        <p>
+          Com isto, é evidente que $T'$ é uma árvore com $n-1$ vértices e $n-2$ arestas.
+        </p>
 
-                <h3>Caso $a \rightarrow b$. $G$ é uma floresta e contém $n-1$ arestas. </h3>
-                <p>
-                    Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um novo grafo $G'$, e de maneira que este permaneça conectado, e assim formando uma árvore, podemos dizer pelo item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um absurdo que $G_n = n-1 \gt G'_n = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
-                </p>
-
-                <h3>Caso $b \rightarrow c$. $G$ é uma floresta e tem $n-1$ arestas, portanto $G$ é uma árvore.</h3>
-                <!-- <pre>
+        <h3>Caso $a \rightarrow b$. $G$ é uma floresta e contém $n-1$ arestas. </h3>
+        <p>
+          Vamos dizer que por contradição $G$ contém ciclos. Se removermos uma aresta de cada ciclo, a fim de formar um
+          novo grafo $G'$, e de maneira que este permaneça conectado, e assim formando uma árvore, podemos dizer pelo
+          item anterior que $G'$ contém $n-1$ arestas. Então $G$, deverá conter mais arestas que $G'$, porém é um
+          absurdo que $n_{G} = n-1 \gt n_{G'} = n-1$. Com isto $G$ é acíclico, sendo ele uma floresta.
+        </p>
+        <h3>Caso $b \rightarrow c$. $G$ é uma floresta e tem $n-1$ arestas, portanto $G$ é uma árvore.</h3>
+        <!-- <pre>
                     i) G have n-1 edges doesn't imply that all vertices are connected by an edge.  <br>
                     ii) G have all vertices connected by an
                     edge doesn't imply that G is connected.
                 </pre> -->
-                <p>
-                    Numa primeira suposição, onde a floresta $G$ contivesse $n$ vértices e também $n$ arestas, já seria refutada por absurdo, pois um grafo com $m = n$ contém um ciclo, e uma floresta não contém ciclos.
-                </p>
-                <p>
-                    Para isto vamos provar que se $G$ não contém ciclos, e que é uma árvore, ou seja um grafo conectado, como mostrado no primeiro caso.
-                </p>
-                <p>
-                    Se $G$, por contradição, fosse um grafo desconectado, onde $k$ a quantidade de suas componentes, conectadas e acíclicas (assim como $G$), então este contém $G_1, G_2,..., G_k$, onde $k \geq 2$.
-                </p>
-                <p>
-                    Para tornar este grafo conectado devemos adicionar 1 aresta conetando uma componente a outra. Porém estas arestas adicionadas devem ser no total de $k-1$ para não fechar um ciclo.
-                </p>
-                <p>
-                    Com a adição destas arestas, para tornar $G$ conectado, o resultado da soma das arestas de $G$ é de $n-1+k-1 = m$, o que é um absurdo, desde que este deve conter $n-1$ arestas.
-                </p>
-            </section>
-        </article>
-        <article>
-            <h1>Exercise 4.1.3</h1>
-            <p>A <em>saturated hydrocarbon</em> is a molecule $C_mH_n$ in which every carbon atom ($C$) has four bonds, every hydrogen atom $(H)$ has one bond, and no sequence of bonds forms a cycle. Show that, for any positive integer $m$, the molecule $C_mH_n$ can exist only if $n = 2m + 2$.</p>
-            <section>
-                <p>
-                    Traduzindo a molécula do hidrocarboneto saturado em um grafo $G$, podemos dizer que o conjunto de vértices $|V_G|=n+m$ e o conjunto de arestas $|E_G|=m+n-1$, e sabendo que pela sua condição de molécula, não tem ciclos, podemos caracterizar este grafo como uma árvore.
-                </p>
-                <p>
-                    Quando passamos para $m$ um inteiro positivo, como $i = 1,2,...,k$, ...
-                </p>
-            </section>
-        </article>
-        <article>
-            <h1>Exercise 4.1.5</h1>
-            <p>Prove Theorem 4.3<a href="#thm1">$^1$</a> by induction on the number of edges of $G$.</p>
-        </article>
-        <article>
-            <h1>Exercise 4.1.7</h1>
-            <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if $\sum_{i=1}^n d_i= 2(n-1)$.</p>
-        </article>
-        <article>
-            <h1>Exercise 4.2.11 - <span class="sml-caps">Prüfer code</span></h1>
-            <p>
-                Let $K_n$ be the labelled complete graph with vertex set $ \{1, 2, . . . , n\} $, where $n \geq 3$. With each spanning tree $T$ of $K_n$ one can associate a unique sequence $(t1,t2,...,tn−2)$, known as the <em>Prüfer</em> code of $T$, as follows. Let $s_1$ denote the first vertex (in the the ordered set $(1,2,...,n)$ which is a leaf of $T$, and let $t_1$ be the neighbour of $s_1$ in $T$. Now let $s_2$ denote the first vertex which is a leaf of $T-s_1$, and $t_2$ the neighbour of $s_2$ in $T−s_1$. Repeat this operation until $t_n−2$ is defined and a tree with just two vertices remains. (If $n \leq 2$, the Prüfer code of $T$ is taken to be the empty sequence.)
-            </p>
-            <ol class="alpha">
-                <li>
-                    List all the spanning trees of $K_4$ and their Prüfer codes.
-                </li>
-                <li>
-                    Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code of a unique spanning tree of $K_n$.
-                </li>
-                <li>
-                    Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
-                </li>
-            </ol>
-            <footer>
-                (H. Prüfer)
-            </footer>
-        </article>
-    </main>
-    <footer>
-        <h2>References</h2>
-        <p><em>Date</em>: April 11, 2019.</p>
-        <ol>
-            <li id="thm1"><strong>Theorem 4.3</strong> If $T$ is a tree, then $e(T) = v(T) − 1$.</li>
-            <li id="thm2"><strong>Theorem 4.8</strong> (<span class="sml-caps">Cayley’s formula</span>) The number of labelled trees on $n$ vertices is $n^{n−2}$.</li>
-        </ol>
-    </footer>
+        <p>
+          Numa primeira suposição, onde a floresta $G$ contivesse $n$ vértices e também $n$ arestas, já seria refutada
+          por absurdo, pois um grafo com $m = n$ contém um ciclo, e uma floresta não contém ciclos.
+        </p>
+        <p>
+          Para isto vamos provar que se $G$ não contém ciclos, e que é uma árvore, ou seja um grafo conectado, como
+          mostrado no primeiro caso.
+        </p>
+        <p>
+          Se $G$, por contradição, fosse um grafo desconectado, onde $k$ a quantidade de suas componentes, conectadas e
+          acíclicas (assim como $G$), então este contém $G_1, G_2,..., G_k$, onde $k \geq 2$.
+        </p>
+        <p>
+          Para tornar este grafo conectado devemos adicionar 1 aresta conetando uma componente a outra. Porém estas
+          arestas adicionadas devem ser no total de $k-1$ para não fechar um ciclo.
+        </p>
+        <p>
+          Com a adição destas arestas, para tornar $G$ conectado, o resultado da soma das arestas de $G$ é de $n-1+k-1 =
+          m$, o que é um absurdo, desde que este deve conter $n-1$ arestas.
+        </p>
+      </section>
+    </article>
 
-    <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
-    <script type="text/x-mathjax-config">
+    <article>
+      <h1>Exercise 4.1.3</h1>
+      <p>A <em>saturated hydrocarbon</em> is a molecule $C_mH_n$ in which every carbon atom ($C$) has four bonds, every hydrogen atom $(H)$ has one bond, and no sequence of bonds forms a cycle. Show that, for any positive integer $m$, the molecule $C_mH_n$ can exist only if $n = 2m + 2$.</p>
+      <section>
+        <h3>Prova</h3>
+        <p>Por indução do número de carbonos $m$ e o número de ligações $n$ a cada carbono adicionado.</p>
+        <h4>Base</h4>
+        <p>
+          Traduzindo a molécula do hidrocarboneto saturado em um grafo $G$, podemos dizer que o conjunto de vértices é definido pelo número de átomos portanto: $|V_G|=m+n$, e o conjunto de arestas pelo número de ligações $|E_G|=m+n-1$.
+        </p>
+        <p>
+          Para $m=1$, é trivial que $CH_4$, ou seja, um grafo com $n=4+1$ vértices e $m=(4+1)-1$ arestas. Sabendo que pela sua condição de molécula, não tem ciclos, podemos caracterizar este grafo como uma árvore.
+        </p>
+        <h4>Hipótese de Indução</h4>
+        <p>
+          Suponha agora que esta propriedade vale para qualquer $m \gt 1$, portanto: $C_mH_{2m+2}$.
+        </p>
+        <h4>Tese de Indução</h4>
+        <p>
+          Ao adicionarmos mais um carbono, por se tratar de um hidrocarboneto saturado, este monocarbono deve fazer exatamente quatro ligações únicas com hidrogênios, e então obtemos o subgrafo:
+        </p>
+        <figure>
+          <img src="img/ch4-mol.svg" alt="Molécula de CH4" style="width: 100px; padding:0 10px;">
+        </figure>
+        <p>
+          Por outro lado, acabamos de ver que $CH_4$ é uma árvore, portanto $C_mH_{2m+2}$ também é uma árvore, logo por definição, há no máximo uma aresta entre dois quaisquer vértices. Com isto, para cada átomo de carbono adicionado à $C_mH_{2m+2}$ devemos adicionar apenas mais 2 átomos de hidrogênio e transferimos 1. Ou seja, é adicionado apenas mais dois 2 vértices (hidrogênios) a cada caborno adicionado.
+        </p>
+        <p>
+          Caso contrário, se fosse adicionado apenas 1 vértice, o carbono não faria 4 ligações com os hidrogênios, se adicionássemos três ou mais, haveria um hidrogênio com duas ligações, ou um carbono com 5 ligações, o que é um absurdo.
+        </p>
+        <p>
+          Portanto neste o hidrocarboneto terá $m+1$ carbonos e,
+          $$
+            \begin{align}
+            & 2m + 2 + 2
+            \\ & = 2(m+1)+2
+            \\ & = n+1
+            \end{align}
+          $$
+          hidrogênios, ou seja: $C_mH_{2(m+2)+2}$.
+        </p>
+        <figure>
+          <img src="img/CmH4m.svg" alt="N moléculas de CH4" style="width: 200px; padding:0 10px;">
+        </figure>
+      </section>
+    </article>
+
+    <article>
+      <h1>Exercise 4.1.5</h1>
+      <h2>Prove Theorem 4.3<a href="#thm1">$^1$</a> by induction on the number of edges of $G$.</h2>
+      <p lang="pt-br">
+        Teorema 4.3: Se $T$ é uma árvore, então $e(T)=v(T)−1$.
+      </p>
+      <section>
+        <h3>Prova</h3>
+        <p>
+          Por indução para o número de arestas $m$ de uma árvore.
+        </p>
+        <h4>Base</h4>
+        <p>
+          Se $e(T)=1$, então saberemos que $T$ conterá $v(T)=2$ vértices. Portanto encontraremos: 
+          $$
+            \begin{align}
+              m & = v(T)-e(T)
+              \\ & = 2-1
+              \\ & = 1
+            \end{align}
+          $$
+        </p>
+        <p>
+          Com isto, vamos supor que este resultado seja válido para qualquer árvore de $m$ arestas menor que $n$.
+        </p>
+        <h4>Hipótese de Indução</h4>
+        <p>
+          Sendo $A$ uma árvore com $m \lt k$ sendo $k \lt n-1$.
+        </p>
+        <p>
+          Devemos mostrar que a afirmação é válida para uma árvore com $m=n-1$ arestas.
+        </p>
+        <h4>Tese de Indução</h4>
+        <p>
+          Dada uma árvore $T$ com $n+1$ arestas. Sendo $T'$ um subgrafo de $T$ com $n$ arestas, portanto $v(T')-e(T')=1$.
+        </p>
+      </section>
+      <p>
+        Agora claramente nos temos $e(T) = e(T')+1$.
+
+        De outra forma, deve existir uma aresta em $T-T'$ que deve compartilhar pelo menos um vértice com $T'$ (senão um
+        ciclo será formado pela nova aresta e qualquer caminho em $T'$ conectando dois vértices com o fim de uma nova
+        aresta são conectadas - como um caminho existisse por causa que $T'$ é conectado).
+
+        Portanto $v(T) = v(T')+1$.
+      </p>
+    </article>
+
+    <article>
+      <h1>Exercise 4.1.7</h1>
+      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if
+        $\sum_{i=1}^n d_i= 2(n-1)$.</p>
+    </article>
+
+    <article>
+      <h1>Exercise 4.2.11 - <span class="sml-caps">Prüfer code</span></h1>
+      <p>
+        Let $K_n$ be the labelled complete graph with vertex set $ \{1, 2, . . . , n\} $, where $n \geq 3$. With each
+        spanning tree $T$ of $K_n$ one can associate a unique sequence $(t1,t2,...,tn−2)$, known as the <em>Prüfer</em>
+        code of $T$, as follows. Let $s_1$ denote the first vertex (in the the ordered set $(1,2,...,n)$ which is a leaf
+        of $T$, and let $t_1$ be the neighbour of $s_1$ in $T$. Now let $s_2$ denote the first vertex which is a leaf of
+        $T-s_1$, and $t_2$ the neighbour of $s_2$ in $T−s_1$. Repeat this operation until $t_n−2$ is defined and a tree
+        with just two vertices remains. (If $n \leq 2$, the Prüfer code of $T$ is taken to be the empty sequence.)
+      </p>
+      <ol class="alpha">
+        <li>
+          List all the spanning trees of $K_4$ and their Prüfer codes.
+        </li>
+        <li>
+          Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code
+          of a unique spanning tree of $K_n$.
+        </li>
+        <li>
+          Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
+        </li>
+      </ol>
+      <footer>
+        (H. Prüfer)
+      </footer>
+    </article>
+  </main>
+  <footer>
+    <h2>References</h2>
+    <p><em>Date</em>: April 11, 2019.</p>
+    <ol>
+      <li id="thm1"><strong>Theorem 4.3</strong> If $T$ is a tree, then $e(T) = v(T) − 1$.</li>
+      <li id="thm2"><strong>Theorem 4.8</strong> (<span class="sml-caps">Cayley’s formula</span>) The number of labelled
+        trees on $n$ vertices is $n^{n−2}$.</li>
+    </ol>
+  </footer>
+
+  <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
       TeX: { extensions: ["mediawiki-texvc.js"] },
-      tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
     </script>
 </body>
 
