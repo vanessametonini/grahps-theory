@@ -63,16 +63,20 @@ ol.alpha li {
   padding-bottom: 2em;
 }
 
-ol.alpha.enumciado {
+ol.alpha.enunciado {
   margin-top: 0;
 }
 
-ol.alpha.enumciado li {
+ol.alpha.enunciado li {
   padding-bottom: 0;
 }
 
 ol.alpha li:last-child {
   padding-bottom: 0;
+}
+
+article footer {
+  text-align: right;
 }
 
 /* estilos de paragrafos */

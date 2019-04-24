@@ -20,7 +20,7 @@
       <h1>Exercise 4.1.2</h1>
       <section>
         <h2>Show that the following three statements are equivalent.</h2>
-        <ol class="alpha enumciado">
+        <ol class="alpha enunciado">
           <li>$G$ is connected and has $n−1$ edges.</li>
           <li>$G$ is a forest and has $n−1$ edges.</li>
           <li>$G$ is a tree.</li>
@@ -191,8 +191,30 @@
 
     <article>
       <h1>Exercise 4.1.7</h1>
-      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if
-        $\sum_{i=1}^n d_i= 2(n-1)$.</p>
+      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if $\sum_{i=1}^n d_i= 2(n-1)$.</p>
+      <section>
+        <h2>Prova</h2>
+        <h4>Base</h4>
+        <p>
+          Se uma sequência $(d_1, d_2,..., d_n)$ é uma sequência de graus de uma árvore $T$, para encontrar o grau de um vértice usamos $\sum_{i=1}^n d_i= 2|E|$, porém para uma árvore seria $\sum_{i=1}^n d_i= 2(n-1)$, pois $|E|=n-1$.
+        </p>
+        <h4>Hipótese de Indução</h4>
+        <p>
+          Vamos construir uma árvore para obter a sequência de graus dada. Uma árvore com $n=2$, seria trivial pois $d_1=d_2=1$, e podemos tomar esta única aresra como nossa árvore e com esta sequência de graus.
+        </p>
+        <p>
+          Agora precisamos provar que isto é verdade para cada $n=i$
+        </p>
+
+        <h4>Tese de Indução</h4>
+        <p>
+          Deve haver um $i$ no qual $d_i=1$, se não $\sum_{i=1}^n d_i \geq 2n$. Então assumindo que $d_n=2$. Deve haver um $i$ no qual $d_i \leq 2n$, senão $\sum_{i=1}^n d_i = n \lt 2(n-1)$.
+        </p>
+        <p>
+          Assumindo que $d_{n-1} \geq 2$. Agora consideramos a sequência $(d'_1 = d_1,...,d'_{n-1})$. Mas então adicionando o vértice $n$ e a aresta $(n-1,n)$ em $T'$ cria uma árvore $T$ com a sequência de grau $(d_1, d_2,..., d_n)$.
+        </p>
+        
+      </section>
     </article>
 
     <article>
@@ -207,14 +229,20 @@
       </p>
       <ol class="alpha">
         <li>
-          List all the spanning trees of $K_4$ and their Prüfer codes.
+          <h2>List all the spanning trees of $K_4$ and their Prüfer codes.</h2>
+          <figure>
+            <img src="img/16-spanning-trees.png" alt="As 16 spanning trees e seus códigos Prüfer" style="width: 500px;">
+          </figure>
         </li>
         <li>
-          Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code
-          of a unique spanning tree of $K_n$.
+          <h2>
+            Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer code of a unique spanning tree of $K_n$.
+          </h2>
         </li>
         <li>
-          Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
+          <h2>
+            Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
+          </h2>
         </li>
       </ol>
       <footer>
