@@ -75,7 +75,7 @@
                     ii) G have all vertices connected by an edge doesn't imply that G is connected.
                 </pre> -->
         <p>
-          Suponhamos que $G$, por contradição, fosse um grafo desconectado. Seja $G_1, G_2,..., G_k$ suas componentes,
+          Suponhamos que $G$, por contradição, fosse um grafo desconectado. Seja $G_1, G_2,\cdots, G_k$ suas componentes,
           conectadas e acíclicas, onde $k \geq 2$. Desta forma, o número de arestas de $G$ é dado por
 
           $$
@@ -192,34 +192,30 @@
 
     <article>
       <h1>Exercise 4.1.7</h1>
-      <p>Show that a sequence $(d_1, d_2,..., d_n)$ of positive integers is a degree sequence of a tree if and only if
+      <p>Show that a sequence $(d_1, d_2,\cdots, d_n)$ of positive integers is a degree sequence of a tree if and only if
         $\sum_{i=1}^n d_i= 2(n-1)$.</p>
       <section>
         <h2>Prova</h2>
-        <h4>Base</h4>
         <p>
-          Se uma sequência $(d_1, d_2,..., d_n)$ é uma sequência de graus de uma árvore $T$, para encontrar o grau de um
-          vértice usamos $\sum_{i=1}^n d_i= 2|E|$, porém para uma árvore seria $\sum_{i=1}^n d_i= 2(n-1)$, pois
-          $|E|=n-1$.
-        </p>
-        <h4>Hipótese de Indução</h4>
-        <p>
-          Vamos construir uma árvore para obter a sequência de graus dada. Uma árvore com $n=2$, seria trivial pois
-          $d_1=d_2=1$, e podemos tomar esta única aresra como nossa árvore e com esta sequência de graus.
+          Se $(d_1, d_2,\cdots, d_n)$ é uma sequência de graus de uma árvore $T$. Então podemos expressar esta sequência em: $\sum_{i=1}^n d_i= 2|E|$, e em uma árvore $\sum_{i=1}^n d_i= 2(n-1)$, pois $|E|=n-1$.
         </p>
         <p>
-          Agora precisamos provar que isto é verdade para cada $n=i$
-        </p>
-
-        <h4>Tese de Indução</h4>
-        <p>
-          Deve haver um $i$ no qual $d_i=1$, se não $\sum_{i=1}^n d_i \geq 2n$. Então assumindo que $d_n=2$. Deve haver
-          um $i$ no qual $d_i \leq 2n$, senão $\sum_{i=1}^n d_i = n \lt 2(n-1)$.
+          Vamos então, construir uma árvore para obter a sequência de graus dada. Uma árvore com $n=2$, seria trivial pois $d_1=d_2=1$, e podemos tomar esta única aresta como nossa árvore e com esta sequência de graus.
         </p>
         <p>
-          Assumindo que $d_{n-1} \geq 2$. Agora consideramos a sequência $(d'_1 = d_1,...,d'_{n-1})$. Mas então
-          adicionando o vértice $n$ e a aresta $(n-1,n)$ em $T'$ cria uma árvore $T$ com a sequência de grau $(d_1,
-          d_2,..., d_n)$.
+          Agora precisamos provar que isto é verdade para cada $n=i$.
+        </p>
+        <p>
+          Deve haver um $i$ no qual $d_i=1$, se não $\sum_{i=1}^n d_i \geq 2n$. Então assumindo que $d_n=2$. Deve haver um $i$ no qual $d_i \geq 2n$, senão $\sum_{i=1}^n d_i = n \lt 2(n-1)$.
+        </p>
+        <p>
+          Assumindo que $d_{n-1} \geq 2$. Agora consideramos a sequência $(d'_1 = d_1,\cdots,d'_{n-2} = d_{n-2}, d'_{n-1}=d{n-1}-1)$. 
+        </p>
+        <p>
+          Nós temos $\sum_{i=1}^{n-1} d'_i= 2(n-2)$ então, por indução em $n$, temos a árvore $T'$ com a sequência de graus $(d'_1,\cdots,d'_{n-1})$.
+        </p>
+        <p>
+          Mas então adicionando o vértice $n$ e a aresta $(n-1,n)$ em $T'$ cria uma árvore $T$ com a sequência de grau $(d_1, d_2,\cdots, d_n)$.
         </p>
 
       </section>
@@ -228,9 +224,9 @@
     <article>
       <h1>Exercise 4.2.11 - <span class="sml-caps">Prüfer code</span></h1>
       <p>
-        Let $K_n$ be the labelled complete graph with vertex set $ \{1, 2, . . . , n\} $, where $n \geq 3$. With each
-        spanning tree $T$ of $K_n$ one can associate a unique sequence $(t1,t2,...,tn−2)$, known as the <em>Prüfer</em>
-        code of $T$, as follows. Let $s_1$ denote the first vertex (in the the ordered set $(1,2,...,n)$ which is a leaf
+        Let $K_n$ be the labelled complete graph with vertex set $ \{1, 2, \cdots , n\} $, where $n \geq 3$. With each
+        spanning tree $T$ of $K_n$ one can associate a unique sequence $(t_1,t_2,\cdots,t_{n−2})$, known as the <em>Prüfer</em>
+        code of $T$, as follows. Let $s_1$ denote the first vertex (in the the ordered set $(1,2,\cdots,n)$ which is a leaf
         of $T$, and let $t_1$ be the neighbour of $s_1$ in $T$. Now let $s_2$ denote the first vertex which is a leaf of
         $T-s_1$, and $t_2$ the neighbour of $s_2$ in $T−s_1$. Repeat this operation until $t_n−2$ is defined and a tree
         with just two vertices remains. (If $n \leq 2$, the Prüfer code of $T$ is taken to be the empty sequence.)
@@ -244,14 +240,52 @@
         </li>
         <li>
           <h2>
-            Show that every sequence $(t_1,t_2,...,t_{n−2})$ of integers from the set $ \{1,2,...,n\} $ is the Prüfer
-            code of a unique spanning tree of $K_n$.
+            Show that every sequence $(t_1,t_2,\cdots,t_{n−2})$ of integers from the set $ \{1,2,\cdots,n\} $ is the Prüfer code of a unique spanning tree of $K_n$.
           </h2>
+          <h2>Prova</h2>
+          <p>
+            O código de Prüfer é uma sequência gerada a partir de um grafo de árvore cujos vértices são numerados com valores distintos, removendo todas as folhas da árvore uma a uma, em uma ordem pré-determinada, até restarem apenas dois vértices. Esta codificação mapeia determinada árvore em uma sequência de $n-2$ números inteiros, onde cada número varia de $1$ a $n$.
+          </p>
+          <p>
+            Vamos mostrar que existe uma bijeção entre uma árvore $T$ com $n \geq 2$ vértices rotulados e uma sequência de inteiros $S = (s_1,s_2,\cdots,s_{n-2})$ onde $1 \leq s_i \leq n$, para todo $i$, provando que esta sequência é o código de uma única <em>spanning tree</em>.
+          </p>
+          <p>
+            Para isto, vamos fazer uma função $f$ bijetora que recebe a sequencia $S$ e constrói uma árvore $T$ com $1,2,\cdots,n$ vértices, adicionado uma aresta de cada vez, onde a cada passo da construção temos florestas $F_1,\cdots,F{n-1}$. Esta função deverá conter o seguinte algoritmo:
+          </p>
+          <ol class="step-by">
+            <li>
+              Definimos $s_{n-1}=n$ e a sequencia $S_1 = (s_1,\cdots,s_{n-2},s_{n-1})$;
+            </li>
+            <li>
+              Definimos $V_1$ como um subconjunto dos número $\{1,2,\cdots,n\}$ que não foram usados na sequência $S$, e $x_1$ o menor elemento de $V_1$;
+            </li>
+            <li>
+              Incluímos em $F_1$ apenas a aresta $\{s_1,x_1\}$;
+            </li>
+            <li>
+              Em cada passo seguinte, para $2 \leq i \leq n−1$;
+            </li>
+            <li>
+              Defina $S_i = (s_1,\cdots,s_{n-1});
+            </li>
+            <li>
+              Defina $V_i$ como o subconjunto dos números $\{1,2,\cdots,n\}$que não são usados em $S_i$ e nem estão no conjunto $\{x_1,\cdots,x_{i-1}\}$;</li>
+            <li>
+              Defina $x_i$ como o menor elemento de $V_i$ e seja $F_i$ a floresta obtida adicionando-se a aresta $\{s_i,x_i\}$ a $F_{i-1}$
+            </li>
+          </ol>
+          <p>
+            Com isto, definimos $T = F _{n-1}$, afirmando que o código de Prüfrer da árvore $T$ é $S$.
+          </p>
         </li>
         <li>
           <h2>
             Deduce Cayleys Formula (see Theorem 4.8<a href="#thm2">$^2$</a> )
           </h2>
+          <h3>Prova</h3>
+          <p>
+            Conforme demonstrado no item anterior, o código de Prüfer nos fornece uma bijeção entre o conjunto de todas as árvores com vértices cujos rótulos estão no conjunto dos inteiros $\{1, 2, \cdots , n\}$ e o conjunto de todas as $(n−2)$-uplas formadas por esses inteiros. Como há $n$ possibilidades de escolha para ocupar cada posição na $(n−2)-upla$, onde $n$ é o rótulo de grau $n-1$, e há $(n−2)$ posições no Código, então, há $n^(n-2)$ distintas $n$-uplas e, portanto, árvores.
+          </p>
         </li>
       </ol>
       <footer>
@@ -264,8 +298,16 @@
     <p><em>Date</em>: April 11, 2019.</p>
     <ol>
       <li id="thm1"><strong>Theorem 4.3</strong> If $T$ is a tree, then $e(T) = v(T) − 1$.</li>
-      <li id="thm2"><strong>Theorem 4.8</strong> (<span class="sml-caps">Cayley’s formula</span>) The number of labelled
-        trees on $n$ vertices is $n^{n−2}$.</li>
+      <li id="thm2">
+        <strong>Theorem 4.8</strong> (<span class="sml-caps">Cayley’s formula</span>) The number of labelled trees on $n$ vertices is $n^{n−2}$.
+      </li>
+    </ol>
+
+    <h2>Referências para as repostas:</h2>
+    <ol>
+      <li><a href="https://www.csie.ntu.edu.tw/~kmchao/tree07spr/counting.pdf">https://www.csie.ntu.edu.tw/~kmchao/tree07spr/counting.pdf</a></li>
+      <li><a href="https://www.math.cmu.edu/~af1p/Teaching/Combinatorics/F06/hw7a.pdf">https://www.math.cmu.edu/~af1p/Teaching/Combinatorics/F06/hw7a.pdf</a></li>
+      <li><a href="http://www.repositorio.ufc.br/bitstream/riufc/36872/1/2018_dis_faccastro.pdf">http://www.repositorio.ufc.br/bitstream/riufc/36872/1/2018_dis_faccastro.pdf</a></li>
     </ol>
   </footer>
 

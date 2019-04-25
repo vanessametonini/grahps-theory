@@ -67,6 +67,7 @@ ol.alpha.enunciado {
   margin-top: 0;
 }
 
+ol.step-by li,
 ol.alpha.enunciado li {
   padding-bottom: 0;
 }
