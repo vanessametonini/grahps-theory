@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Graph",
+    "definition": "A graph $G$ consists of $V(G)$, a set of vertices (often also called nodes) and $E(G)$, a set of edges"
+  },
+  {
+    "title": "Simple graph",
+    "definition": "Has no loops"
+  },
+  {
+    "title": "The degree of a vertex",
+    "definition": "Is the number of edges that are incident of $v$ vertex"
+  },
+  {
+    "title": "Neighborhood",
+    "definition": "Set of all vertices sharing an edge with $v$"
+  },
+  {
+    "title": "The handshaking lemma",
+    "definition": "In any graph $\\sum d(v) = 2|E|$"
+  },
+  {
+    "title": "$K_n$",
+    "definition": "Is a complete graph on $n$ vertices"
+  },
+  {
+    "title": "Bipartite graph",
+    "definition": "Has two sets of vertices, where in a set there are no edges between it members. Is allowed to has vertices without edges. Notation: $G[X,Y]$"
+  },
+  {
+    "title": "Isolated graph",
+    "definition": "No edges"
+  },
+  {
+    "title": "Complete bipartite graph ",
+    "definition": "All vertices of a X partition shares edge with all vertices of the partition Y and vice-versa.On $n$ vertices $G[X,Y]$, with $|X| = r$ and $|Y| = s$ number of elements, the  number of edges are: $r.s \\leq \\frac{n^2}{4}$"
+  },
+  {
+    "title": "The star graph",
+    "definition": "It is a bipartite graph where one of the sets has just one member"
+  },
+  {
+    "title": "Grid graph",
+    "definition": "  "
+  },
+  {
+    "title": "Isomorphic Graphs",
+    "definition": "Two graphs $G_1$ and $G_2$ that there is a 1-1 onto a bijection function from $V_{(G_1)}$ to $V_{(G_2)}$ preserving adjacency"
+  },
+  {
+    "title": "Hypercube",
+    "definition": "$Q_n := \\{$ $0-1$ vector (nodes), such that any two nodes have an edge between them exactly when they differ in $1$ coordinate$\\}$"
+  },
+  {
+    "title": "Planar Graph",
+    "definition": "Is a graph that can be drawn in the plane such that edges can meet only their corresponding vertices"
+  },
+  {
+    "title": "Subgraph",
+    "definition": "A subgraph $F$ of a graph $G$ is a graph that uses a subset of the vertices of $G$, such that: $V_{(F)} \\leq V_{(G)}$ and $E_{(F)} \\leq E_{(G)}$"
+  },
+  {
+    "title": "Incidence Matrix",
+    "definition": "Is the $n \\times m$. $M_G := (m_{ve})$. $m_ve$ is the number of times $(0,1,2,...)$ that a vertex $v$ and edge $e$ are incident"
+  },
+  {
+    "title": "Adjacency Matrix",
+    "definition": "Is the $n \\times n$ . $A_G := (a_{uv})$. a_{uv} is the number of edges joining the vertices $u$ and $v$. In case of loops, it counts two edges"
+  },
+  {
+    "title": "Isolated vertex",
+    "definition": "A vertex with degree equals to $0$"
+  },
+  {
+    "title": "Eigenvalue",
+    "definition": "An Eigenvalue of a matrix $M$ is a complex number given by $M_x = \\lambda_x$, where $x$ is a vector, called an eigenvector of $M$ and $\\lambda \\in \\mathbb{C}$ (is a complex number)"
+  },
+  {
+    "title": "Walk",
+    "definition": "A walk in a graph $G$ is a sequence of nodes (vertices) $w = v_0e_1,v_1e_2,v_2e_3,\\cdots,v_{l-1}e_l,v_le_{l+1}$ where the terms are alternating vertices and edges of $G$ (not necessarily distinct) such that $v_{i-1}$, and $v_i$ are the end points of $e_i, 1 \\leq i \\leq l$"
+  },
+  {
+    "title": "Path",
+    "definition": "A path is a walk which does not repeat any vertices"
+  },
+  {
+    "title": "Cycle",
+    "definition": "A cycle in $G$ is a closed path, and it requires at least $3$ vertices"
+  },
+  {
+    "title": "Hamiltonian path",
+    "definition": "Is a path that traverses all the vertices of $V$"
+  },
+  {
+    "title": "Hamiltonian cycle",
+    "definition": "Is a cycle that traverses all vertices of $V$ exactly once"
+  },
+  {
+    "title": "Hamiltonian graph",
+    "definition": "Is a graph $G$ that has a Hamiltonian cycle"
+  },
+  {
+    "title": "Face",
+    "definition": "Is defined by a minimal cycle in the graph $G$"
+  },
+  {
+    "title": "Chord",
+    "definition": "A chord of a cycle is an edge or path of $G$ formed by two (or more) non-adjacent vertices relative to the cycle."
+  },
+  {
+    "title": "k-connected",
+    "definition": "Is a graph you need remove $\\geq k$ edge(s) to disconnect it."
+  },
+  {
+    "title": "Spanning subgraph",
+    "definition": "Is a subgraph of $G$ obtained by removing some or all edges."
+  },
+  {
+    "title": "Induced subgraph",
+    "definition": "Is a subgraph of $G$ obtained by vertex deletion, therefore in this graph also the edges related with the deleted vertex are erased."
+  }
+]
