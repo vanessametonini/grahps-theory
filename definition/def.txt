@@ -5,3 +5,6 @@ floresta: grafo aciclico - que nao contem ciclos
 uma arvore é uma foresta conectada (portanto é aciclica). tem no minimo duas folhas de grau 1.
 
 grafo eh conectado qdo existe um caminho entre qualquer dois vertices
+
+
+http://www.malinc.se/math/latex/basiccodeen.php

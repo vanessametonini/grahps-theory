@@ -1,89 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Definition List</title>
-    <link rel="stylesheet" href="../css/gt-theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Definition List</title>
+  <link rel="stylesheet" href="../css/gt-theme.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-<header>
-    <h1>MAC5770 - Introdução à Teoria dos Grafos.       <br>Definition List</h1>
+  <header>
+    <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Definition List</strong></h1>
     <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
-</header>
-<main>
-<dl>
+  </header>
+  <main>
+    <form style="display: none">
+      <label for="filtro">Filtro</label>
+      <input type="search" name="filtro" id="filtro">
+    </form>
+    <dl class="definition-list">
+
+      <dt>Graph</dt>
+      <dd>
+        A graph $G$ consists of $V(G)$, a set of <strong>vertices</strong> (often also called <strong>nodes</strong>) and $E(G)$, a set of <strong>edges</strong>
+      </dd>
+
+      <dt>Simple graph</dt>
+      <dd>
+        Has no loops
+      </dd>
+  
+      <dt>The <strong>degree</strong> of a vertex</dt>
+      <dd>
+        Is the <strong>number</strong> of edges that are <strong>incident</strong> of $v$ vertex
+      </dd>
+  
+      <dt>Neighborhood</dt>
+      <dd>
+        Set of all vertices sharing an edge with $v$
+      </dd>
+  
+      <dt>The handshaking lemma</dt>
+      <dd>
+        In any graph $\sum d(v) = 2|E|$
+      </dd>
+
+      <dt>$K_n$</dt>
+      <dd>
+        Is a <strong>complete</strong> graph on $n$ vertices
+      </dd>
+  
+      <dt>Bipartite graph</dt>
+      <dd>
+        Has two sets of vertices, where in a set there are no edges between it members. Is allowed to has vertices without edges. Notation: $G[X,Y]$
+      </dd>
+  
+      <dt>Isolated graph</dt>
+      <dd>
+        No edges
+      </dd>
+  
+      <dt>Complete bipartite graph </dt>
+      <dd>
+        All vertices of a X partition shares edge with all vertices of the partition Y and vice-versa.
+        On $n$ vertices $G[X,Y]$, with $|X| = r$ and $|Y| = s$ number of elements, the  number of edges are: $r.s \leq \frac{n^2}{4}$
+      </dd>
+  
+      <dt>The star graph</dt>
+      <dd>
+        It is a bipartite graph where one of the sets has just one member.
+      </dd>
+  
+      <dt>Grid graph</dt>
+      <dd>
+        
+      </dd>
+
+      <dt>Isomorphic Graphs</dt>
+      <dd>
+        Two graphs $G_1$ and $G_2$ that there is a 1-1 onto a bijection function from $V_{(G_1)}$ to $V_{(G_2)}$ preserving adjacency.
+      </dd>
+
+      <dt>Hypercube</dt>
+      <dd>
+        $Q_n := \{$ $0-1$ vector (nodes), such that any two nodes have an edge between them exactly when they differ in $1$ coordinate$\}$
+      </dd>
+
+      <dt>Planar Graph</dt>
+      <dd>
+        Is a graph that can be drawn in the plane such that edges can meet only their corresponding vertices.
+      </dd>
+
+      <dt>Subgraph</dt>
+      <dd>
+        A subgraph $F$ of a graph $G$ is a graph that uses a subset of the vertices of $G$, such that: $V_{(F)} \leq V_{(G)}$ and $E_{(F)} \leq E_{(G)}$.
+      </dd>
+
+      <dt>Incidence Matrix</dt>
+      <dd>
+        Is the $n \times m$. $M_G := (m_{ve})$. $m_ve$ is the number of times $(0,1,2,...)$ that a vertex $v$ and edge $e$ are incident.
+      </dd>
+
+      <dt>Adjacency Matrix</dt>
+      <dd>
+        Is the $n \times n$ . $A_G := (a_{uv})$. a_{uv} is the number of edges joining the vertices $u$ and $v$. In case of loops, it counts two edges.
+      </dd>
+
+      <dt>Isolated vertex</dt>
+      <dd>
+        A vertex with degree equals to $0$;
+      </dd>
+
+      <dt>Eigenvalue</dt>
+      <dd>
+        An Eigenvalue of a matrix $M$ is a complex number given by $M_x = \lambda_x$, where $x$ is a vector, called an eigenvector of $M$ and $\lambda \in \mathbb{C}$ (is a complex number)
+      </dd>
+
+      <dt>Walk</dt>
+      <dd>
+        A walk in a graph $G$ is a sequence of nodes (vertices) $w = v_0e_1,v_1e_2,v_2e_3,\cdots,v_{l-1}e_l,v_le_{l+1}$ where the terms are alternating vertices and edges of $G$ (not necessarily distinct) such that $v_{i-1}$, and $v_i$ are the end points of $e_i, $e_i, 1 \leq i \leq l$
+      </dd>
+
+      <dt>Path</dt>
+      <dd>
+        A path is a walk which does not repeat any vertices.
+      </dd>
+      
+      <dt>Cycle</dt>
+      <dd></dd>
+
+      <dt></dt>
+      <dd></dd>
+      
+      <dt></dt>
+      <dd></dd>
+
+      <dt></dt>
+      <dd></dd>
+      
+      <dt></dt>
+      <dd></dd>
+
+    </dl>
 
 
-</dl>
-<dt>Simple graph</dt>
-    <dd>Has no loops</dd>
 
-<dt>The degree of a vertex</dt>
-    <dd>Is the number of edges that are incident of $v$ vertex</dd>
-
-<dt>Neighborhood</dt>
-    <dd>Set of all vertices sharing an edge with $v$ </dd>
-    
-<dt>The handshaking lemma</dt>
-    <dd>
-        In any graph
-        $$\sum d(v) = 2|E| $$
-    </dd>
-
-<dt>General bipartite graph</dt>
-    <dd>Has two sets, where in a set there are no edges between it members</dd>
-
-<dt></dt>Isolated graph</dt>
-     <dd>no edges</dd>
-
-<dt>Complete bipartite graph </dt>
-    <dd>
-        on $n$ vertices $G[x,y]$, with $|X| = r$ and $|Y| = s$, we always have
-        $$r.s \leq \frac{n^2}{4} $$
-        All is conected
-    </dd>
-
-<dt>The start graph</dt>
-    <dd>
-        é um grafo bipartido onde um dos conjuntos contém apenas um membro
-    </dd>
-
-<dt>Edge graph</dt>
-    <dd>
-        $P=a$ 3-dimensional
-        <br>
-        polyhedron
-    </dd>
-
-<dt>grid graph</dt>
-    <dd>
-        two graphs $G_1$ $G_2$ 
-    </dd>
-
-
-
-Diâmetro 
+    Diâmetro
     maior distância entre quaisquer dois vértices
 
-Distância
+    Distância
     é o menor caminho entre dois vertices
 
-Diametro infinito
+    Diametro infinito
     quando o grafo é desconectado
 
+  </main>
+  <footer>
+    <h2>Bibliography</h2>
+    <ol>
+      <li>Graph Theory - J.A Bondy & U.S.R Murty</li>
+    </ol>
+  </footer>
 
-
+  <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    TeX: { extensions: ["mediawiki-texvc.js"] },
+    tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
+  </script>
+  <script>
+    const form = document.querySelector('form');
+    const definitionList = document.querySelector('.definition-list');
     
-</main>
+    const filtrar = (event) => {
+      event.preventDefault();
 
-<script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-TeX: { extensions: ["mediawiki-texvc.js"] },
-tex2jax: {inlineMath: [["$","$"],["\$","\$"]]}});
-</script>
+      const termsList = definitionList.querySelectorAll('dt');
+
+      let arrayTermsList = Array
+                          .from(termsList)
+                          .filter(
+                            termEl => {
+                              if(termEl.textContent.toLowerCase().includes(event.target.value.toLowerCase()))
+                              {
+                                return termEl
+                              }
+                            }
+                          );
+      
+    }
+
+    form.addEventListener('submit', event => event.preventDefault());
+    filtro.addEventListener('input', filtrar);
+  </script>
 </body>
-
 </html>

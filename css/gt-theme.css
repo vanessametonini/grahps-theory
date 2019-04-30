@@ -135,6 +135,23 @@ h1 + p {
 }
 /* fim estilos de paragrafos */
 
+.definition-list {
+  counter-reset: def 0;
+}
+
+.definition-list dt {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.definition-list dt::before {
+  content: counter(def) ' - ';
+  counter-increment: def 1;
+}
+
+.definition-list dd {
+  padding-bottom: 1em;
+}
+
 @media print {
   body {
       font-size: 14px;
