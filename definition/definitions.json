@@ -12,6 +12,14 @@
     "definition": "$K_n:=G$ on $n$ vertices is defnines by joining all pairs of vertices with an edge of $G$"
   },
   {
+    "title": "Empty graph",
+    "definition": "Is the one in which no two vertices are adjacent"
+  },
+  {
+    "title": "Connectec graph",
+    "definition": "Is the one in which no two vertices are adjacent"
+  },
+  {
     "title": "The degree of a vertex",
     "definition": "Is the number of edges that are incident of $v$ vertex"
   },
@@ -20,8 +28,8 @@
     "definition": "Set of all vertices sharing an edge with $v$"
   },
   {
-    "title": "The handshaking lemma",
-    "definition": "In any graph $\\sum d(v) = 2|E|$"
+    "title": "k-regular",
+    "definition": "Is one that has $deg(v)=k$ for all $v \\in V$. A regular graph is one that is $k-regular$ for some $k$"
   },
   {
     "title": "$K_n$",
@@ -45,14 +53,14 @@
   },
   {
     "title": "Grid graph",
-    "definition": "  "
+    "definition": "Also known as square graph, it is a $x \\times y$ graph, where the vertices set is the Cartesian product of $x \\times y$. And the adjacency between two vertices is determinated by the equality of its abscissas or ordereds, and plus the difference of $\\pm1$ between its abscissas or ordereds."
   },
   {
     "title": "Isomorphic Graphs",
     "definition": "Two graphs $G_1$ and $G_2$ that there is a 1-1 onto a bijection function from $V_{(G_1)}$ to $V_{(G_2)}$ preserving adjacency"
   },
   {
-    "title": "Hypercube",
+    "title": "N-cube (Hypercube) graph",
     "definition": "$Q_n := \\{$ $0-1$ vector (nodes), such that any two nodes have an edge between them exactly when they differ in $1$ coordinate$\\}$"
   },
   {
@@ -62,6 +70,10 @@
   {
     "title": "Subgraph",
     "definition": "A subgraph $F$ of a graph $G$ is a graph that uses a subset of the vertices of $G$, such that: $V_{(F)} \\leq V_{(G)}$ and $E_{(F)} \\leq E_{(G)}$"
+  },
+  {
+    "title": "Complement of a graph",
+    "definition": "The complement $C$ of $G$ is whose vertex set $V_{(C)}=V_{(G)}$ and the edges are the pairs of the non-adjacentb vertices of $G$"
   },
   {
     "title": "Incidence Matrix",
@@ -138,6 +150,10 @@
   {
     "title": "Diameter",
     "definition": "The diameter of a graph $G$ is the largest distance between any two vertices of $G$"
+  },
+  {
+    "title": "Infinite Diameter",
+    "definition": "It happens when the graph is disconnected"
   },
   {
     "title": "Girth",
@@ -238,5 +254,9 @@
   {
     "title": "Line Graph",
     "definition": "Of a given graph $G$ (denotated by $L(G)$) is the graph that associates/assign to each edge of $G$ a vertex (of $L(G)$) in such a way that two verices in $L(G)$ are joined by an edge $<=>$ their corresponding edges in $G$ share a vertex in $G$"
+  },
+  {
+    "title": "The handshaking lemma",
+    "definition": "In any graph $\\sum d(v) = 2|E|$"
   }
 ]

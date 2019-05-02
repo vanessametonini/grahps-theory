@@ -2,7 +2,7 @@
   const elDefinitionList = document.querySelector('.definition-list');
 
   const definitionsInserter = ({ title, definition }, dl) => {
-    const tuple = `<dt>${title}</dt><dd>${definition}</dd>`;
+    const tuple = `<div><dt>${title}</dt><dd>${definition}</dd></div>`;
     dl.insertAdjacentHTML('afterbegin', tuple)
   }
 

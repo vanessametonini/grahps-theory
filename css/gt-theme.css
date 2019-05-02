@@ -152,6 +152,10 @@ h1 + p {
   padding-bottom: 1em;
 }
 
+.hide {
+  display: none;
+}
+
 @media print {
   body {
       font-size: 14px;

@@ -1,0 +1,80 @@
+
+/*
+latex.css
+https://github.com/davidrzs/latexcss
+MIT-License
+*/
+
+@import "latex-fonts.css";
+
+body {
+  font-family: 'Latin Modern Roman', serif;
+  counter-reset: theorem;
+  counter-reset: definition;
+}
+
+a, a:visited {
+  color: #a00;
+}
+
+.theorem {
+  counter-increment: theorem;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+}
+
+.theorem:before {
+  content: "Theorem " counter(theorem) ".";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lemma {
+  counter-increment: theorem;
+  display: block;
+  margin: 12px 0;
+  font-style: italic;
+}
+
+.lemma:before {
+  content: "Lemma " counter(theorem) ".";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.proof {
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+}
+
+.proof:before {
+  content: "Proof.";
+  font-style: italic;
+}
+
+.proof:after {
+  content: "\25FB";
+  float:right;
+}
+
+.definition {
+  counter-increment: definition;
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+}
+
+.definition:before {
+  content: "Definition " counter(definition) ".";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.author {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-variant-caps: small-caps;
+  text-align: center;
+}
