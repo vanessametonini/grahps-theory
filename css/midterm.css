@@ -1,0 +1,32 @@
+.midterm {
+  counter-reset: questions 0;
+}
+
+.midterm header {
+  font-variant-caps: all-petite-caps;
+  padding-bottom: 1em;
+}
+
+.midterm main {
+  border: none;
+  padding-top: 0;
+}
+
+.midterm main > p {
+  margin-bottom: 2em;
+}
+
+.midterm article {
+  padding-left: 1.5em;
+}
+
+.midterm h2 {
+  font-size: 1em;
+  font-weight: inherit;
+}
+
+.midterm article h2::before {
+  content: counter(questions) '. ';
+  counter-increment: questions 1;
+  font-weight: bold;
+}

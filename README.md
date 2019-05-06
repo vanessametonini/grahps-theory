@@ -12,5 +12,5 @@ Requirements to run ([Node](https://nodejs.org/en/), [npm](https://www.npmjs.com
 2. `npm install` (for MathJax - it could take few minutes)  
 3. http-server  
 
-
-
+## Content license
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Este trabalho está licenciado com uma Licença Creative Commons - Atribuição-NãoComercial 4.0 Internacional" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
