@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5th Exercise List</title>
+  <link rel="stylesheet" href="../css/latex.css">
+  <link rel="stylesheet" href="../css/gt-theme.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Exercise List 5</strong></h1>
+    <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
+    <p>22.05.2019</p>
+  </header>
+  <main>
+    <article>
+      <h2>Exercise 9.1.1</h2>
+      <p>
+        Consider the vertices $x = (0,0,\cdots,0)$ and $y = (1,1,\cdots,1)$ of the $n$-cube $Q_n$. Describe a maximum collection of edge-disjoint $xy$-paths in $Q_n$ and a minimum vertex cut of $Q_n$ separating $x$ and $y$.
+      </p>
+    </article>
+    <article>
+      <h2>Exercise 9.1.3</h2>
+      <ol class="alpha">
+        <li>Show that if $G$ is simple and $\delta \geq n − 2$, then $\kappa = \delta$.</li>
+      </ol>
+    </article>
+    <article>
+      <h2>Exercise 9.1.8</h2>
+      <p>
+        Let $G$ be a connected graph which is not complete. Show that $G$ is $k$-connected if and only if any two vertices at distance two are connected by $k$ internally disjoint paths.
+      </p>
+    </article>
+    <article>
+      <h2>Exercise 9.1.9</h2>
+      <p>
+        Consider the following statement, which resembles Mengers Theorem. 
+      </p>
+      <blockquote>
+        Let $G(x, y)$ be a graph of diameter $d$, where $x$ and $y$ are nonadjacent vertices. Then the maximum number of internally disjoint $xy$-paths of length $d$ or less is equal to the minimum number of vertices whose deletion destroys all $xy$-paths of length $d$ or less.
+      </blockquote>
+      <ol class="alpha">
+        <li>
+          Prove this statement for $d = 2$.
+        </li>
+        <li>
+          Verify that the graph shown in Figure 1 is a counterexample to the statement in general. <span class="sml-caps">(J.A. Bondy and P. Hell)</span>
+          <figure>
+            <img src="img/fig1.png" alt="Figure 1" style="width: 24%">
+            <figcaption>Figure 1. A counterexample to Mengers Theorem for short paths (Exercise 9.1.9)</figcaption>
+          </figure>
+        </li>
+      </ol>
+    </article>
+    <article>
+      <h2>Exercise 9.1.10</h2>
+      <ol class="alpha">
+        <li>
+          Show that if $G$ is a $k$-connected graph and e is any edge of $G$, then $G / e$ is $(k − 1)$-connected.
+        </li>
+        <li>
+          For each $k \geq 4$, find a $k$-connected graph $G \neq K_{k+1}$ such that $\kappa(G / e) = k−1$, for every edge $e$ of $G$.
+        </li>
+      </ol>
+    </article>
+  </main>
+  <footer>
+    <h2>Comments from the monitor's class:</h2>
+    <blockquote>
+      Hi!
+      <br>
+      Yesterday I didn't had looked to the exercises before the class session, so I was not able to comment them. So here
+      comes a few tips:
+      <br>
+      - For who likes to use theorems in the solutions, this time it is ok to use any theorem proven in Section 9.1 from the
+      book, without proving it in the list. You don't have to prove Menger's theorem to use It. But look also to Theorem 9.2
+      and the alternative definition of connectivity in equation (9.4). The only thing a require is that you make clear what
+      you are using.
+      <br>
+      - Exercise 9.1.9 looks to be the hardest one.
+      <br>
+      - As I said yesterday (and I confirm it now, after seeing the list) in this subject the most important thing is to know
+      the definitions very well. Very often it is just a few small steps that solves the problem.
+      <br>
+      - Use wisely the two equivalent definitions of connectivity, given in equations (9.1) and (9.4). The entire Section 9.1
+      from the book can be summarized as stablishing this fact and so the exercises from this list are there to highlight
+      this.
+      <br>
+      Good luck! <br>
+      Fabrício Caluza Machado
+    </blockquote>
+  </footer>
+
+  <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { extensions: ["mediawiki-texvc.js"] },
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
+    </script>
+</body>
+
+</html>

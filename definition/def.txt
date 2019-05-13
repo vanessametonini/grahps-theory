@@ -8,3 +8,8 @@ grafo eh conectado qdo existe um caminho entre qualquer dois vertices
 
 
 http://www.malinc.se/math/latex/basiccodeen.php
+
+
+https://www.latex-tutorial.com/symbols/greek-alphabet/
+
+https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
