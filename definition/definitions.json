@@ -16,8 +16,8 @@
     "definition": "Is the one in which no two vertices are adjacent"
   },
   {
-    "title": "Connectec graph",
-    "definition": "Is the one in which no two vertices are adjacent"
+    "title": "Connected graph",
+    "definition": "A graph is connected if, for every partition of its vertex set into two nonempty sets $X$ and $Y$, there is an edge with one end in $X$ and one end in $Y$"
   },
   {
     "title": "The degree of a vertex",
