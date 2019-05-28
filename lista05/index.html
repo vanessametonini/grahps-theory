@@ -22,6 +22,37 @@
       <p>
         Consider the vertices $x = (0,0,\cdots,0)$ and $y = (1,1,\cdots,1)$ of the $n$-cube $Q_n$. Describe a maximum collection of edge-disjoint $xy$-paths in $Q_n$ and a minimum vertex cut of $Q_n$ separating $x$ and $y$.
       </p>
+      <section>
+        <h2>Solução</h2>
+        <p>
+          Por definição, para construir um $n$-cube qualquer, devemos adicionar uma aresta entre dois vértices que diferem em apenas um dígito em seu valor. Usando, esta regra, é possível encontrar os caminhos entre dois vértices $x$ e $y$, inclusive caminhos internante disjuntos.
+        </p>
+        <p>
+          Para qualquer $Q_n$, onde $x = (0,0,\cdots,0)$ e $y=(1,1,\cdots,1)$, e sabendo da condição de $k$-regularidade do $n$-cube, onde aqui $k=n$, o grau de qualquer vértice é $n$, ou seja, um vértice pode ter $n$ diferentes caminhos.
+        </p>
+        <p>
+          Portanto a diferença entre $P_1$ até $P_n$ caminhos internamente disjuntos, começa pela diferença de um dígito, da esquerda para direita à partir do segundo vértice destes caminhos. Vamos usar esta lógica para organizar e exemplificar, até que todos caminhos terminem em $y=(1,1,\cdots,1)$:
+        </p> 
+        <p>
+          $$
+            P_1 = \{(0,0,\cdots,0),(1,0,\cdots,0),(1,1,\cdots,0),(1,1,\cdots,1)\}
+          $$
+          $$
+            P_2 = \{(0,0,\cdots,0),(0,1,\cdots,0),(0,1,\cdots,1),(1,1,\cdots,1)\}
+          $$
+          $$
+            \cdots
+          $$
+          $$
+            P_n = \{(0,0,\cdots,0),(0,0,\cdots,1),(1,0,\cdots,1),(1,1,\cdots,1)\}
+          $$
+        </p>
+        <p>
+          Como a intersecção de quaisquer dois caminhos internamente disjuntos $P(x,y)$ é $\{x,y\}$, de acordo como Teorema de Menger, o córte mínimo de vértices para desconectar $x$ e $y$ (minimum $xy$-vertex-cut) é $n$. 
+          $$\therefore c(x,y) = n$$
+        </p>
+
+      </section>
     </article>
     <article>
       <h2>Exercise 9.1.3</h2>
@@ -60,7 +91,7 @@
       <h2>Exercise 9.1.10</h2>
       <ol class="alpha">
         <li>
-          Show that if $G$ is a $k$-connected graph and e is any edge of $G$, then $G / e$ is $(k − 1)$-connected.
+          Show that if $G$ is a $k$-connected graph and $e$ is any edge of $G$, then $G / e$ is $(k − 1)$-connected.
         </li>
         <li>
           For each $k \geq 4$, find a $k$-connected graph $G \neq K_{k+1}$ such that $\kappa(G / e) = k−1$, for every edge $e$ of $G$.

@@ -7,6 +7,9 @@ uma arvore é uma foresta conectada (portanto é aciclica). tem no minimo duas f
 grafo eh conectado qdo existe um caminho entre qualquer dois vertices
 
 
+A matching in a graph is a set of disjoint edges (i.e no two sharing an endpoint) connecting pairs of vertices, and a maximum matching is a matching of maximum size.
+
+
 http://www.malinc.se/math/latex/basiccodeen.php
 
 
