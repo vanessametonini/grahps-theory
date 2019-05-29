@@ -14,7 +14,7 @@
   <header>
     <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Exercise List 5</strong></h1>
     <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
-    <p>22.05.2019</p>
+    <p>29.05.2019</p>
   </header>
   <main>
     <article>
@@ -22,7 +22,7 @@
       <p>
         Consider the vertices $x = (0,0,\cdots,0)$ and $y = (1,1,\cdots,1)$ of the $n$-cube $Q_n$. Describe a maximum collection of edge-disjoint $xy$-paths in $Q_n$ and a minimum vertex cut of $Q_n$ separating $x$ and $y$.
       </p>
-      <section>
+      <section class="resposta">
         <h2>Solução</h2>
         <p>
           Por definição, para construir um $n$-cube qualquer, devemos adicionar uma aresta entre dois vértices que diferem em apenas um dígito em seu valor. Usando, esta regra, é possível encontrar os caminhos entre dois vértices $x$ e $y$, inclusive caminhos internante disjuntos.
@@ -48,22 +48,37 @@
           $$
         </p>
         <p>
-          Como a intersecção de quaisquer dois caminhos internamente disjuntos $P(x,y)$ é $\{x,y\}$, de acordo como Teorema de Menger, o córte mínimo de vértices para desconectar $x$ e $y$ (minimum $xy$-vertex-cut) é $n$. 
+          Como a intersecção de quaisquer dois caminhos internamente disjuntos $P(x,y)$ é $\{x,y\}$, e conforme o Teorema de Menger, o córte mínimo de vértices para desconectar $x$ e $y$ (minimum $xy$-vertex-cut) é $n$, o mesmo se aplica para $Q_n$. 
           $$\therefore c(x,y) = n$$
         </p>
-
       </section>
     </article>
+    <hr>
     <article>
-      <h2>Exercise 9.1.3</h2>
-      <ol class="alpha">
-        <li>Show that if $G$ is simple and $\delta \geq n − 2$, then $\kappa = \delta$.</li>
-      </ol>
+      <h2>Exercise 9.1.3 a. </h2>
+      <p>Show that if $G$ is simple and $\delta \geq n − 2$, then $\kappa = \delta$.</p>
+      <section class="resposta">
+        <h2>Solução</h2>
+        <p>
+          Sendo $G$ um grafo no qual menor grau é igual $n-2$, ou maior, e devido a condição de ser um grafo simples, pode ser no máximo $n-1$, temos então estes dois casos a demonstrar se a conectividade de $G$ equivale ao seu menor grau.
+        </p>
+        <h3>Caso $n-1$:</h3>
+        <p>
+          Um grafo $G$ onde a conectividade de menor grau é $n-1$, é um grafo onde todos os vértices tem arestas que conectam com todos os outros vértices, ou seja um grafo conectado. Ao remover um vértice de um grafo conectado, o mesmo continuará contectado devido sua condição. Sucessivamente, removendo vértice a vértice o mesmo ainda continuará conectado até que reste apenas um único vértice de $V_{(G)}$, formando um grafo trivial e assim desconectado. Portanto para deixar este grafo desconectado, é foi necessário remover $n-1$ arestas, portanto $\kappa_{(G)} = n-1$.
+        </p>
+        <h3>Caso $n-2$:</h3>
+        <p>Em um grafo $G$ onde a conectividade de menor grau é $n-2$, então existem dois vértices $x$ e $y$ que não são adjacentes, e que tem exatamente os mesmos vizinhos. Se em $G$, revovermos sucessivamente, cada vizinho de $x$ e $y$, vamos desconectar o grafo, restando apenas os dois vértices não adjacentes $x$ e $y$, assim para um grafo de menor grau $n-2$ devemos remover os $n-2$ vértices que tem grau $n-1$, portanto $\kappa_{(G)} = n-2$.</p>
+      </section>
     </article>
     <article>
       <h2>Exercise 9.1.8</h2>
       <p>
         Let $G$ be a connected graph which is not complete. Show that $G$ is $k$-connected if and only if any two vertices at distance two are connected by $k$ internally disjoint paths.
+      </p>
+      <h2>Solução</h2>
+      <p>
+        Seja $G$ um grafo $k$-conectado, com $k$ caminhos internamente disjuntos entre quaisquer dois vértices com distância dois.
+
       </p>
     </article>
     <article>
@@ -76,14 +91,25 @@
       </blockquote>
       <ol class="alpha">
         <li>
-          Prove this statement for $d = 2$.
+          <p>
+            Prove this statement for $d = 2$.
+          </p>
+          <section class="resposta">
+            <h2>Solução</h2>
+            <p></p>
+          </section>
         </li>
         <li>
-          Verify that the graph shown in Figure 1 is a counterexample to the statement in general. <span class="sml-caps">(J.A. Bondy and P. Hell)</span>
+          <p>Verify that the graph shown in Figure 1 is a counterexample to the statement in general. <span class="sml-caps">(J.A.
+            Bondy and P. Hell)</span></p>
           <figure>
             <img src="img/fig1.png" alt="Figure 1" style="width: 24%">
             <figcaption>Figure 1. A counterexample to Mengers Theorem for short paths (Exercise 9.1.9)</figcaption>
           </figure>
+          <section class="resposta">
+            <h2>Solução</h2>
+            <p></p>
+          </section>
         </li>
       </ol>
     </article>
@@ -91,15 +117,26 @@
       <h2>Exercise 9.1.10</h2>
       <ol class="alpha">
         <li>
-          Show that if $G$ is a $k$-connected graph and $e$ is any edge of $G$, then $G / e$ is $(k − 1)$-connected.
+          <p>Show that if $G$ is a $k$-connected graph and $e$ is any edge of $G$, then $G / e$ is $(k − 1)$-connected.</p>
+          <section class="resposta">
+            <h2>Solução</h2>
+            <p>
+              Vamos supor que $G/e$ não é $(k-1)$-conexo. Então existe um conjunto $S \subseteq V(G/e)$ com $|S|=k-2$ tal que a remoção de $S$ desconecta $G/e$.
+            </p>
+          </section>
         </li>
         <li>
-          For each $k \geq 4$, find a $k$-connected graph $G \neq K_{k+1}$ such that $\kappa(G / e) = k−1$, for every edge $e$ of $G$.
+          <p>For each $k \geq 4$, find a $k$-connected graph $G \neq K_{k+1}$ such that $\kappa(G / e) = k−1$, for every edge $e$ of
+          $G$.</p>
+          <section class="resposta">
+            <h2>Solução</h2>
+            <p></p>
+          </section>
         </li>
       </ol>
     </article>
   </main>
-  <footer>
+  <!-- <footer>
     <h2>Comments from the monitor's class:</h2>
     <blockquote>
       Hi!
@@ -124,7 +161,7 @@
       Good luck! <br>
       Fabrício Caluza Machado
     </blockquote>
-  </footer>
+  </footer> -->
 
   <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
   <script type="text/x-mathjax-config">

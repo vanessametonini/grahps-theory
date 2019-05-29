@@ -95,6 +95,10 @@ main h2 + p {
   padding-left: 1em;
 }
 
+main .resposta h2 + p {
+  padding-left: 0;
+}
+
 h1 + section > h2:first-of-type {
   margin-top: -.1em;
   margin-bottom: .2em;
@@ -160,6 +164,10 @@ h1 + p {
   body {
       font-size: 14px;
   } 
+
+  header {
+    font-size: .8em;
+  }
   
   header, main, footer {
       padding: 0;
@@ -171,5 +179,10 @@ h1 + p {
 
   main {
       border: 0;
+  }
+
+  hr {
+    border: none;
+    margin-bottom: 4em;
   }
 }
