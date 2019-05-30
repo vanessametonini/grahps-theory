@@ -39,6 +39,10 @@ h1 strong {
   font-size: 1.2em;
 }
 
+article{
+  text-align: justify;
+}
+
 figure {
   margin: 0 auto;
   text-align: center;
@@ -90,6 +94,23 @@ article footer {
 p {
   text-indent: 1em;
 }
+
+article > h2:first-of-type {
+  float: left;
+  margin: 0;
+}
+
+article > h2:first-of-type + p:first-of-type{
+  line-height: 1.8em;
+  margin: 0;
+  padding-left: 0;
+}
+
+article > h2:first-of-type + .alpha {
+  clear: left;
+  padding-top: .1em;
+}
+
 
 main h2 + p {
   padding-left: 1em;

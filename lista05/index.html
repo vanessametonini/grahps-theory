@@ -75,11 +75,27 @@
       <p>
         Let $G$ be a connected graph which is not complete. Show that $G$ is $k$-connected if and only if any two vertices at distance two are connected by $k$ internally disjoint paths.
       </p>
-      <h2>Solução</h2>
-      <p>
-        Seja $G$ um grafo $k$-conectado, com $k$ caminhos internamente disjuntos entre quaisquer dois vértices com distância dois.
-
-      </p>
+      <section class="resposta">
+        <h2>Solução</h2>
+        <p>
+          Se $G$ é $k$-conectado, por definição, $p(x,y)\geq k$ para todo $x$ e $y$ distintos, ou seja, existem $k$ caminhos internamente disjuntos entre quaisquer dois vértices distintos, e isto vale para vértices de distância dois.
+        </p>
+        <p>
+          Vamos supor agora que entre quaisquer dois vértices distintos de distância dois, existam $k$ caminhos internamente disjuntos.
+        </p>
+        <p>
+          Como $G$ não é completo, existe em $G$ um corte mínimo $S$ com $|S|=\kappa(G)$.
+          Seja $u$ um vértice de $S$ e sejam $v$ e $w$ vértices adjacentes a $u$ em componentes distintas de $G-S$.
+          Tais vértices existem, se $v$ ou $w$ não existissem, então $S-u$ seria um corte, e $S$ não seria um corte mínimo, uma contradição.
+        </p>
+        <p>
+          Portanto, como $v$ e $w$ não são adjacentes (pois pertecem a componentes distintas de $G-S$) e existe entre eles um caminho $vuw$ de comprimento dois, então a distância entre $v$ e $w$ é dois, e por hipótese, existem $k$ caminhos isjuntos entre $v$ e $w$.
+        </p>
+        <p>
+          Como $S$ é um corte entre $v$ e $w$, pelo Teorema de Menger, $S$ tem pelo menos $k$ vértices, portanto,
+          $|S|=\kappa(G)\geq k$ e $G$ é $k$-conectado.
+        </p>
+      </section>
     </article>
     <article>
       <h2>Exercise 9.1.9</h2>
@@ -96,7 +112,12 @@
           </p>
           <section class="resposta">
             <h2>Solução</h2>
-            <p></p>
+            <p>
+              Seja $p_2(x,y)$ o número máximo de $xy$-caminhos internamente disjuntos de comprimento 2 e seja $c_2(x,y)$ o número mínimo de vértices cuja remoção elimina todos os $xy$-caminhos de comprimento 2.
+            </p>
+            <p>
+              Claramente, $p_2 \leq c2$, pois, devemos remover no mínimo um vértice de cada $xy$-caminho internamente disjunto de comprimento 2 para eliminar todos esses caminhos. Se $p_2 < c2$, teremos um absurdo, pois, como cada caminho tem comprimento 2, então, podemos remover no máximo um vértice de cada caminho (o vértice central). Portanto, $p_2=c_2$.
+            </p>
           </section>
         </li>
         <li>
