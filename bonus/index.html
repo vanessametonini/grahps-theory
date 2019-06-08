@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="../css/latex.css">
     <link rel="stylesheet" href="../css/gt-theme.css">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <style>
+        h2 + .resposta {
+            padding-top: 1em;
+            clear: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -18,53 +25,49 @@
     </header>
     <main>
         <article>
-            <p>
-                Seja $I_1,I_2,\cdots,I_n$ intervalos fechados na reta real. Seja $G$ o grafo simples com vértices $v_1,v_2,\cdots,v_n$ tal que para todo $i$, $j$, $v_i$ é adjacente a $v_j$ se e só se $I_i \cap I_j \neq 0$.
-            </p>
-            <p>
-                Mostre que $\varkappa(G) = \omega(G)$.
-            </p>
+            <h2>
+                Seja $I_1,I_2,\cdots,I_n$ intervalos fechados na reta real. Seja $G$ o grafo simples com vértices $v_1,v_2,\cdots,v_n$ tal que para todo $i$, $j$, $v_i$ é adjacente a $v_j$ se e só se $I_i \cap I_j \neq 0$. Mostre que $\chi(G) = \omega(G)$.
+            </h2>
             <section class="resposta">
                 <h2>Prova</h2>
                 <p>
-                    Seja $S$ uma clique de tamanho $\omega(G)$, devido sua característica onde todos os vértices estão conectados entre si, então cada vértice em $S$ precisa ter uma cor distinta. Portanto $\varkappa(G) \geq \omega(G)$.
+                    Seja $S$ uma clique de tamanho $\omega(G)$, devido sua característica onde todos os vértices estão conectados entre si, então cada vértice em $S$ precisa ter uma cor distinta. Portanto $\chi(G) \geq \omega(G)$.
                 </p>
                 <!-- <p>
-                    Resta mostrar que $\varkappa(G) \leq \omega(G)$. Isto é, mostrar que $\omega(G)$ cores são suficientes para colorir $G$
+                    Resta mostrar que $\chi(G) \leq \omega(G)$. Isto é, mostrar que $\omega(G)$ cores são suficientes para colorir $G$
                 </p>     -->
                 <h3>Base</h3>
                 <p>
-                    Caso, $n=1$ então de fato $\omega(G) = 1$ ou sejá, existe $1$-colorável.
+                    Caso, $n=1$ então de fato $\omega(G) = 1$, ou seja, é $1$-colorável.
                 </p>
                 <h3>Hipótese de indução</h3>
                 <p>
-                    Seja, $n \geq 2$, suponha que $G$ tem $n-1$ vértices, então $G$ é $\omega(G)$-colorável.
+                    Seja, $n \geq 2$, suponhamos que $G$ tem $n-1$ vértices, então $G$ é $\omega(G)$-colorável.
                 </p>
                 <h3>Passo</h3>
                 <p>
-                    Se $G$ tem $n$ vértices, seja $v$ o vértice que representa o intervalo com menor extremo superior. O grafo $G-v$ é um grafo de intervalos com $n-1$ vértices e por hipótese de indução admite coloração com $\omega(G-v)$ cores.
+                    Se $G$ tem $n$ vértices, seja $v$ o vértice que representa o intervalo com menor extremo superior. O grafo $G-v$ é um grafo de intervalos com $n-1$ vértices e por hipótese de indução admite coloração miníma de $\omega(G-v)$ cores.
                 </p>
                 <p>
-                    Se $\omega(G-v) = \omega(G)-1$, então $G-v$ tem coloração com $\omega(G)-1$ cores. Portanto, em $G$, $\omega(G)$ cores bastam tomtar a coloração do $G-v$ dada por hipótese de indução, usa uma nova cor para $v$.
+                    Se $\omega(G-v) = \omega(G)-1$, então $G-v$ tem coloração com $\omega(G)-1$ cores. Portanto, em $G$, $\omega(G)$ cores bastam. Tomamos a coloração do $G-v$ dada por hipótese de indução, e usamos uma nova cor para $v$.
                 </p>
                 <p>
-                    Se $\omega(G-v) = \omega(G)$, então $v$ tem no máximo $\omega(G)-1$ vizinhos em $G$ *. E $G-v$ tem coloração com $\omega(G)$ cores. Como $v$ tem $\omega(G)-1$ vizinhos há uma cor dentre as $\omega(G)$ cores que posos usar para colorir $v$. Então é possível color $G$ com $\omega(G)$ cores.
+                    Se $\omega(G-v) = \omega(G)$, então $v$ tem no máximo $\omega(G)-1$ vizinhos em $G$. E $G-v$ tem coloração com $\omega(G)$ cores. Como $v$ tem $\omega(G)-1$ vizinhos há uma cor dentre as $\omega(G)$ cores que posso usar para colorir $v$. Então é possível colorir $G$ com $\omega(G)$ cores.
                 </p>
-                <p>
-                    teremos que usar o fato de que $g$ é um grado de intervalos, e $v$ foi escolhido como o intervalo com menor extremo superior.
-                </p>
-                <p>
-                    Se $x$ e $y$ são vizinhos de $v$, então $x$ e $y$ são vizinhos entre si.
-                </p>
+                <!-- <p>
+                    Se $x$ e $y$ são vizinhos de $v$, então $x$ e $y$ são vizinhos entre si, então $\omega(G)-v = \omega(G)$, ou seja, existe uma clique máxima $S$ em $G
+                    $ tal que $v \notin S$.
+                </p> -->
+                <!-- <p>
+                    teremos que usar o fato de que $g$ é um grafo de intervalos, e $v$ foi escolhido como o intervalo com menor extremo superior.
+                </p> -->
                 <!-- 
                     $v$ tem o menor extremo superior (é o primeiro intervalo a acabar) 
                 -->
-                <p>
-                    $\omega(G)-v = \omega(G)$, ou seja, existe uma clique máxima $S$ em $g$ tal que $v \notin S$.
-                </p>
-                <p>
-                    Pela escolha de $v$, sei que $v \cup \{x \in V: x$  é vizinho do $v\}$ = $v \cup N(n)$ é uma clique em $G$, e tem tamanho $1+d_G(v)$. Portanto, $d_G(v) \leq \omega(G)-1$.
-                </p>
+                
+                <!-- <p>
+                    Pela escolha de $v$, sabemos que $v \cup \{x \in V: x$  é vizinho do $v\}$ = $v \cup N(n)$ é uma clique em $G$, e tem tamanho $1+d_G(v)$. Portanto, $d_G(v) \leq \omega(G)-1$.
+                </p> -->
             </section>
 
         </article>

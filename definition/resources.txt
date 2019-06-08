@@ -16,3 +16,5 @@ http://www.malinc.se/math/latex/basiccodeen.php
 https://www.latex-tutorial.com/symbols/greek-alphabet/
 
 https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+
+https://pwp.gatech.edu/math3012openresources/lecture-videos/lecture-10/
