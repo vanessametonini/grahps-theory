@@ -1,7 +1,7 @@
 [
   {
     "title": "Graph",
-    "definition": "A graph $G$ consists of $V(G)$, a set of vertices (often also called nodes) and $E(G)$, a set of edges"
+    "definition": "A graph $G$ consists of $V(G)$, a set of vertices (often also called nodes) and $E(G)$, a set of edges."
   },
   {
     "title": "Simple graph",
@@ -9,47 +9,47 @@
   },
   {
     "title": "Complete graph",
-    "definition": "$K_n:=G$ on $n$ vertices is defnines by joining all pairs of vertices with an edge of $G$"
+    "definition": "$K_n:=G$ on $n$ vertices is defnines by joining all pairs of vertices with an edge of $G$."
   },
   {
     "title": "Empty graph",
-    "definition": "Is the one in which no two vertices are adjacent"
+    "definition": "Is the one in which no two vertices are adjacent."
   },
   {
     "title": "Connected graph",
-    "definition": "A graph is connected if, for every partition of its vertex set into two nonempty sets $X$ and $Y$, there is an edge with one end in $X$ and one end in $Y$"
+    "definition": "A graph is connected if, for every partition of its vertex set into two nonempty sets $X$ and $Y$, there is an edge with one end in $X$ and one end in $Y$."
   },
   {
     "title": "The degree of a vertex",
-    "definition": "Is the number of edges that are incident of $v$ vertex"
+    "definition": "Is the number of edges that are incident of $v$ vertex."
   },
   {
     "title": "Neighborhood",
-    "definition": "Set of all vertices sharing an edge with $v$"
+    "definition": "Set of all vertices sharing an edge with $v$."
   },
   {
     "title": "k-regular",
-    "definition": "Is one that has $deg(v)=k$ for all $v \\in V$. A regular graph is one that is $k-regular$ for some $k$"
+    "definition": "Is one that has $deg(v)=k$ for all $v \\in V$. A regular graph is one that is $k-regular$ for some $k$."
   },
   {
     "title": "$K_n$",
-    "definition": "Is a complete graph on $n$ vertices"
+    "definition": "Is a complete graph on $n$ vertices."
   },
   {
     "title": "Bipartite graph",
-    "definition": "Has two sets of vertices, where in a set there are no edges between it members. Is allowed to has vertices without edges. Notation: $G[X,Y]$"
+    "definition": "Has two sets of vertices, where in a set there are no edges between it members. Is allowed to has vertices without edges. Notation: $G[X,Y]$."
   },
   {
     "title": "Isolated graph",
-    "definition": "No edges"
+    "definition": "No edges."
   },
   {
     "title": "Complete bipartite graph ",
-    "definition": "All vertices of a X partition shares edge with all vertices of the partition Y and vice-versa.On $n$ vertices $G[X,Y]$, with $|X| = r$ and $|Y| = s$ number of elements, the  number of edges are: $r.s \\leq \\frac{n^2}{4}$"
+    "definition": "All vertices of a X partition shares edge with all vertices of the partition Y and vice-versa.On $n$ vertices $G[X,Y]$, with $|X| = r$ and $|Y| = s$ number of elements, the  number of edges are: $r.s \\leq \\frac{n^2}{4}$."
   },
   {
     "title": "The star graph",
-    "definition": "It is a bipartite graph where one of the sets has just one member"
+    "definition": "It is a bipartite graph where one of the sets has just one member."
   },
   {
     "title": "Grid graph",
@@ -57,67 +57,67 @@
   },
   {
     "title": "Isomorphic Graphs",
-    "definition": "Two graphs $G_1$ and $G_2$ that there is a 1-1 onto a bijection function from $V_{(G_1)}$ to $V_{(G_2)}$ preserving adjacency"
+    "definition": "Two graphs $G_1$ and $G_2$ that there is a 1-1 onto a bijection function from $V_{(G_1)}$ to $V_{(G_2)}$ preserving adjacency."
   },
   {
     "title": "N-cube (Hypercube) graph",
-    "definition": "$Q_n := \\{$ $0-1$ vector (nodes), such that any two nodes have an edge between them exactly when they differ in $1$ coordinate$\\}$"
+    "definition": "$Q_n := \\{$ $0-1$ vector (nodes), such that any two nodes have an edge between them exactly when they differ in $1$ coordinate$\\}$."
   },
   {
     "title": "Planar Graph",
-    "definition": "Is a graph that can be drawn in the plane such that edges can meet only their corresponding vertices"
+    "definition": "Is a graph that can be drawn in the plane such that edges can meet only their corresponding vertices."
   },
   {
     "title": "Subgraph",
-    "definition": "A subgraph $F$ of a graph $G$ is a graph that uses a subset of the vertices of $G$, such that: $V_{(F)} \\leq V_{(G)}$ and $E_{(F)} \\leq E_{(G)}$"
+    "definition": "A subgraph $F$ of a graph $G$ is a graph that uses a subset of the vertices of $G$, such that: $V_{(F)} \\leq V_{(G)}$ and $E_{(F)} \\leq E_{(G)}$."
   },
   {
     "title": "Complement of a graph",
-    "definition": "The complement $C$ of $G$ is whose vertex set $V_{(C)}=V_{(G)}$ and the edges are the pairs of the non-adjacentb vertices of $G$"
+    "definition": "The complement $C$ of $G$ is whose vertex set $V_{(C)}=V_{(G)}$ and the edges are the pairs of the non-adjacentb vertices of $G$."
   },
   {
     "title": "Incidence Matrix",
-    "definition": "Is the $n \\times m$. $M_G := (m_{ve})$. $m_ve$ is the number of times $(0,1,2,...)$ that a vertex $v$ and edge $e$ are incident"
+    "definition": "Is the $n \\times m$. $M_G := (m_{ve})$. $m_ve$ is the number of times $(0,1,2,...)$ that a vertex $v$ and edge $e$ are incident."
   },
   {
     "title": "Adjacency Matrix",
-    "definition": "Is the $n \\times n$ . $A_G := (a_{uv})$. a_{uv} is the number of edges joining the vertices $u$ and $v$. In case of loops, it counts two edges"
+    "definition": "Is the $n \\times n$ . $A_G := (a_{uv})$. a_{uv} is the number of edges joining the vertices $u$ and $v$. In case of loops, it counts two edges."
   },
   {
     "title": "Isolated vertex",
-    "definition": "A vertex with degree equals to $0$"
+    "definition": "A vertex with degree equals to $0$."
   },
   {
     "title": "Eigenvalue",
-    "definition": "An Eigenvalue of a matrix $M$ is a complex number given by $M_x = \\lambda_x$, where $x$ is a vector, called an eigenvector of $M$ and $\\lambda \\in \\mathbb{C}$ (is a complex number)"
+    "definition": "An Eigenvalue of a matrix $M$ is a complex number given by $M_x = \\lambda_x$, where $x$ is a vector, called an eigenvector of $M$ and $\\lambda \\in \\mathbb{C}$ (is a complex number)."
   },
   {
     "title": "Walk",
-    "definition": "A walk in a graph $G$ is a sequence of nodes (vertices) $w = v_0e_1,v_1e_2,v_2e_3,\\cdots,v_{l-1}e_l,v_le_{l+1}$ where the terms are alternating vertices and edges of $G$ (not necessarily distinct) such that $v_{i-1}$, and $v_i$ are the end points of $e_i, 1 \\leq i \\leq l$"
+    "definition": "A walk in a graph $G$ is a sequence of nodes (vertices) $w = v_0e_1,v_1e_2,v_2e_3,\\cdots,v_{l-1}e_l,v_le_{l+1}$ where the terms are alternating vertices and edges of $G$ (not necessarily distinct) such that $v_{i-1}$, and $v_i$ are the end points of $e_i, 1 \\leq i \\leq l$."
   },
   {
     "title": "Path",
-    "definition": "A path is a walk which does not repeat any vertices"
+    "definition": "A path is a walk which does not repeat any vertices."
   },
   {
     "title": "Cycle",
-    "definition": "A cycle in $G$ is a closed path, and it requires at least $3$ vertices"
+    "definition": "A cycle in $G$ is a closed path, and it requires at least $3$ vertices."
   },
   {
     "title": "Hamiltonian path",
-    "definition": "Is a path that traverses all the vertices of $V$"
+    "definition": "Is a path that traverses all the vertices of $V$."
   },
   {
     "title": "Hamiltonian cycle",
-    "definition": "Is a cycle that traverses all vertices of $V$ exactly once"
+    "definition": "Is a cycle that traverses all vertices of $V$ exactly once."
   },
   {
     "title": "Hamiltonian graph",
-    "definition": "Is a graph $G$ that has a Hamiltonian cycle"
+    "definition": "Is a graph $G$ that has a Hamiltonian cycle."
   },
   {
     "title": "Face",
-    "definition": "Is defined by a minimal cycle in a plannar graph $G$"
+    "definition": "Is defined by a minimal cycle in a plannar graph $G$."
   },
   {
     "title": "Chord",
@@ -137,107 +137,107 @@
   },
   {
     "title": "Genus",
-    "definition": "Is the smallest $g$ such that we can draw the graph on a suface $g$, without intersecting edges"
+    "definition": "Is the smallest $g$ such that we can draw the graph on a suface $g$, without intersecting edges."
   },
   {
     "title": "Dual Graph",
-    "definition": "Is when we add a vertex in the interior of each graph's face of $G$, and one in the outer face of the plan, and connecting with edges the vertices of the faces that share edges in $G$, then forming a subgraph $G'$"
+    "definition": "Is when we add a vertex in the interior of each graph's face of $G$, and one in the outer face of the plan, and connecting with edges the vertices of the faces that share edges in $G$, then forming a subgraph $G'$."
   },
   {
     "title": "Distance",
-    "definition": "The distance between any $2$ vertices $u,v \\in V$ is the length of a shortest path connecting $u$ and $v$"
+    "definition": "The distance between any $2$ vertices $u,v \\in V$ is the length of a shortest path connecting $u$ and $v$."
   },
   {
     "title": "Diameter",
-    "definition": "The diameter of a graph $G$ is the largest distance between any two vertices of $G$"
+    "definition": "The diameter of a graph $G$ is the largest distance between any two vertices of $G$."
   },
   {
     "title": "Infinite Diameter",
-    "definition": "It happens when the graph is disconnected"
+    "definition": "It happens when the graph is disconnected."
   },
   {
     "title": "Girth",
-    "definition": "Is the length of the shortest cycle in a graph $G$"
+    "definition": "Is the length of the shortest cycle in a graph $G$."
   },
   {
     "title": "Euler Trail",
-    "definition": "Is a walk that passes exactly once through each edge of a graph $G$"
+    "definition": "Is a walk that passes exactly once through each edge of a graph $G$."
   },
   {
     "title": "Euler Tour",
-    "definition": "Is a walk that passes exactly once through each edge of a graph $G$, but it is also a closed path"
+    "definition": "Is a walk that passes exactly once through each edge of a graph $G$, but it is also a closed path."
   },
   {
     "title": "Even graph",
-    "definition": "Is a graph whoose degrees of all vertices are even"
+    "definition": "Is a graph whoose degrees of all vertices are even."
   },
   {
     "title": "Proper coloring",
-    "definition": "Also known as vertex proper coloring, is when the vertices of a graph receive a color property given by a set of $k$ colors, such that any two adjacent vertices share a same common color of this set"
+    "definition": "Also known as vertex proper coloring, is when the vertices of a graph receive a color property given by a set of $k$ colors, such that any two adjacent vertices share a same common color of this set."
   },
   {
     "title": "$k$-coloring",
-    "definition": "Is a proper vertex coloring that only uses $k$ colors"
+    "definition": "Is a proper vertex coloring that only uses $k$ colors."
   },
   {
     "title": "Tree",
-    "definition": "Is an acyclic (with no cycles) and connected graph"
+    "definition": "Is an acyclic (with no cycles) and connected graph."
   },
   {
     "title": "Leaf",
-    "definition": "A leaf of a tree is a vertex of degree equals to $1$"
+    "definition": "A leaf of a tree is a vertex of degree equals to $1$."
   },
   {
     "title": "Subtree",
-    "definition": "It is a subgraph of $G$, which is a tree"
+    "definition": "It is a subgraph of $G$, which is a tree."
   },
   {
     "title": "Spanning tree",
-    "definition": "Is a subtree of $G$, which is also a spanning subgraph"
+    "definition": "Is a subtree of $G$, which is also a spanning subgraph."
   },
   {
     "title": "Automorphism",
-    "definition": "Is an isomorphism from $G$ to itself"
+    "definition": "Is an isomorphism from $G$ to itself."
   },
   {
     "title": "Independent set",
-    "definition": "It is a set of vertices that are not adjacent with any members of this set"
+    "definition": "It is a set of vertices that are not adjacent with any members of this set."
   },
   {
     "title": "Maximum independent set",
-    "definition": "It is a set of vertices that are not adjacent with any members of this set. Also this set is the set that has the maximum cardinality in terms of size"
+    "definition": "It is a set of vertices that are not adjacent with any members of this set. Also this set is the set that has the maximum cardinality in terms of size."
   },
   {
     "title": "Stability number / Independence number $\\alpha(G)$",
-    "definition": "Is the size of a maximum independent set of a graph"
+    "definition": "Is the size of a maximum independent set of a graph."
   },
   {
     "title": "Clique",
-    "definition": "Is a subgraph of a graph $G$, isomorphic to some $K_m$ (any $m$)"
+    "definition": "Is a subgraph of a graph $G$, isomorphic to some $K_m$ (any $m$)."
   },
   {
     "title": "Clique number $\\alpha(\\overline{G}) = \\omega(G) $",
-    "definition": "Is the size (maximum cardinality) of the largest clique in $G$"
+    "definition": "Is the size (maximum cardinality) of the largest clique in $G$."
   },
   {
     "title": "Claw-free Graph",
-    "definition": "It is when a graph $G$ do not contains a complete bipartite induced subgraph $K_{1,3}$"
+    "definition": "It is when a graph $G$ do not contains a complete bipartite induced subgraph $K_{1,3}$."
   },
   {
     "title": "Chromatic number $\\chi(G)$",
-    "definition": "Is the smallest number of colors we need to color the vertices of $G$, such that no two vertices which are neighbors have the same color"
+    "definition": "Is the smallest number of colors we need to color the vertices of $G$, such that no two vertices which are neighbors have the same color."
   },
   {
     "title": "Matching",
-    "definition": "Is a collection of edges of $G$, which do not overlap (not share a vertex)"
+    "definition": "Is a collection of edges of $G$, which do not overlap (not share a vertex)."
   },
   {
     "title": "Complete matching",
-    "definition": "In $G$ (bipartite graph with $|V_2| \\geq |V_1|$) is a matching shuch that each vertex in $V_1$ gets covered (by some edge of the matching)"
+    "definition": "In $G$ (bipartite graph with $|V_2| \\geq |V_1|$) is a matching shuch that each vertex in $V_1$ gets covered (by some edge of the matching)."
   },
   {
     "title": "Directed Graph (digraph)",
-    "definition": "Every edge $e$, in a directed graph $D$ has exactly one tail and one head"
+    "definition": "Every edge $e$, in a directed graph $D$ has exactly one tail and one head."
   },
   {
     "title": "Incidence Matrix",
@@ -245,18 +245,67 @@
   },
   {
     "title": "Indegree",
-    "definition": "Of a vertex in a digraph is the number of edges $e$ in $(\\overline G)$ whose head is $v$"
+    "definition": "Of a vertex in a digraph is the number of edges $e$ in $(\\overline G)$ whose head is $v$."
   },
   {
     "title": "Outdegree",
-    "definition": "Of a vertex in a digraph is the number of the edges $e$ in $(\\overline G)$ whose tail is $v$"
+    "definition": "Of a vertex in a digraph is the number of the edges $e$ in $(\\overline G)$ whose tail is $v$."
   },
   {
     "title": "Line Graph",
-    "definition": "Of a given graph $G$ (denotated by $L(G)$) is the graph that associates/assign to each edge of $G$ a vertex (of $L(G)$) in such a way that two verices in $L(G)$ are joined by an edge $<=>$ their corresponding edges in $G$ share a vertex in $G$"
+    "definition": "Of a given graph $G$ (denotated by $L(G)$) is the graph that associates/assign to each edge of $G$ a vertex (of $L(G)$) in such a way that two verices in $L(G)$ are joined by an edge $<=>$ their corresponding edges in $G$ share a vertex in $G$."
+  },
+  {
+    "title": "Internally-disjoint paths",
+    "definition": "Given $x$ and $y$ two vertices of $G$, where $x \\neq y$, $xy$-paths $P_1$ and  $P_2$ are internally disjoint if they don't have any internal vertices in common and $V(P_1) \\cap V(P_2) = \\{x,y\\}$."
+  },
+  {
+    "title": "Local connectivity $p(x,y)$",
+    "definition": "Given $x$ and $y$ two non-adjacent vertices of $V(G)$, and  $x \\neq y$. The local connectivity is the maximum number of internally disjoint paths between $x$ and $y$ of smaller size."
+  },
+  {
+    "title": "Vertex cut",
+    "definition": "A $xy$-vertex cut is a subset $S$ of $V(G) \\setminus \\{x,y\\}$ where $G-S$ disconect $x$ from $y$."
+  },
+  {
+    "title": "Local cut $c(x,y)$",
+    "definition": "Is the maximum number of vertices required in any $xy$-vertex cut to disconnect $x$ to $y$."
+  },
+  {
+    "title": "Cycle exchange",
+    "definition": "$G$ is a conected graph, and $C$ a cycle created from a subset of $V(G)$. To create a new circle $C'$ from $C$ without change its length, given two non-consecutive vertices $x$ and $y$ in $C$ such that $xy$ and $x^+y^+$ edges are in $G$, we bring those edges to $C$ and then delete edges $xx^+$ and $yy^+$, this edges override creates $C'$ and characterists the cycle exchange."
+  },
+  {
+    "title": "Bridge",
+    "definition": "It is a set of edges of $G$ that has it start and end in a cycle $C$."
+  },
+  {
+    "title": "Attached vertices",
+    "definition": "Are vertices from a cycle that also contains edges that are not part of the edges of the cycle."
+  },
+  {
+    "title": "Maximal",
+    "definition": "with respect to some quantity."
+  },
+  {
+    "title": "Maximum",
+    "definition": "with respect to inclusion."
   },
   {
     "title": "The handshaking lemma",
     "definition": "In any graph $\\sum d(v) = 2|E|$"
+  },
+  {
+    "title": "Menger’s Theorem (Undirected Vertex Version)",
+    "definition": "In any graph $G(x,y)$ where $x$ and $y$ are nonadjacent, the maximum number of pairwise internally disjoint $xy$-paths is equal to the minimum number of vertices in an $xy$-vertex-cut, that is, $p(x,y)=c(x,y)$"
+  },
+  {
+    "title": "Theorem 9.2",
+    "definition": "If $G$ has at least one pair of nonadjacent vertices, $(G)=min\\{p(x,y):x,y \\in V(G), x \\neq y, xy \\notin E(G)\\}$"
+  },
+  {
+    "title": "Theorem of exercise 1.3.8 (Kneser graph)",
+    "definition": "$KG2$, $n$ is isomorphic to the complement of $L(Kn), n \\geq 5$."
   }
+  
 ]
