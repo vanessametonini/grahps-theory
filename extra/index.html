@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extra Exercises</title>
+  <link rel="stylesheet" href="../css/latex.css">
+  <link rel="stylesheet" href="../css/gt-theme.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+  <style>
+    h2+.resposta {
+      padding-top: 1em;
+      clear: left;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>MAC5770 - Introdução à Teoria dos Grafos <strong>Extra Exercises</strong></h1>
+    <h2>Vanessa Martinez Tonini. NºUSP 10855034</h2>
+    <p>21.06.2019</p>
+  </header>
+  <main>
+    <article>
+      <h2>
+        Exercise 1.
+      </h2>
+      <p>If $G$ is a $2$-connected graph that is both $K_{1,3}$-free and $(K_{1,3}+e)$-free, prove that $G$ is
+        Hamiltonian.
+        (Recall that a graph $G$ is $H$-free if G does not contain an isomorphic copy of $H$ as an induced subgraph.)
+      </p>
+      <figure>
+        <img src="img/k13k13e.png" alt="K1,3 and K1,3+e graphs">
+        <figcaption>Figure 1. The graphs $K_{1,3}$ and $K_{1,3}+e$.</figcaption>
+      </figure>
+      <section class="resposta">
+        <h2>Prova</h2>
+        <p>
+          Vamos supor que por contrapositiva, $G$ não seja hamiltoniano, devemos mostrar então que $G$ contém um $K_{1,3}$ ou $K_{1,3}+e$ como subgrafo induzido.
+        </p>
+        <p>
+          Seja $C$ o ciclo de maior tamanho em $G$. Como $G$ não é hamiltoniano então existe um vértice $x$ que está fora de $C$ e que é adjacente a algum vértice de $C$, pois $G$ é $2$-conectado.
+        </p> 
+        
+        <p>
+          Seja $y$ o vértice de $C$ no qual $x$ é conectado, observamos que $x$ não é adjacente à $y-$ e $y+$, caso contrário $C$ não seria o maior ciclo em $G$.
+        </p>
+        <figure>
+          <img src="img/ex01.svg" alt="x not adjacent to y- and y+" style="width: 20%">
+        </figure>
+        <p>
+          Caso $y-y+ \notin E(G)$, obtemos um subgrafo induzido $K_{1,3}:= \{x,y,y-,y+\}$.
+        </p>
+        <p>
+          Caso $y-y+ \in E(G)$, obtemos um subgrafo induzido $K_{1,3}+e:= \{x,y,y-,y+\}$.
+        </p>
+          <figure>
+            <img src="img/k13.svg" alt="x not adjacent to y- and y+" style="width: 25%">
+            <img src="img/k13e.svg" alt="x not adjacent to y- and y+" style="width: 25%">
+          </figure>
+      </section>
+    </article>
+
+    <article style="clear: both;">
+      <h2>
+        Exercise 2.
+      </h2>
+      <p>Prove $\chi(G) \leq l + 1$, where $l$ is the length of a longest path in $G$.</p>
+      <section class="resposta">
+        <h2>Prova</h2>
+      </section>
+
+    </article>
+
+    <article>
+      <h2>
+        Exercise 3.
+      </h2>
+      <p>Let $G$ be a connected graph, let $x$ be a vertex of $G$, and let $T$ be a spanning tree of $G$ which maximizes the function $F_x(T) := \sum_{v \in V} d_T(x, v)$. Show that $T$ is a $DFS$-tree of $G$.</p>
+      <section class="resposta">
+        <h2>Prova</h2>
+      </section>
+    
+    </article>
+  </main>
+
+  <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+      TeX: { extensions: ["mediawiki-texvc.js"] },
+      tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}});
+    </script>
+</body>
+
+</html>
