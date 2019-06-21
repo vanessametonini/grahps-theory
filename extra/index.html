@@ -15,6 +15,25 @@
       clear: left;
     }
 
+    table {
+      margin-left: 2em;
+      text-align: right;
+    }
+
+    td,th {
+      border-bottom: 1px solid silver;
+    }
+
+    tbody tr:last-child td {
+      border: none;
+      border-bottom-color: silver;
+      border-bottom-style: double;
+    }
+
+    tfoot td {
+      border-bottom: 0;
+    }
+
   </style>
 </head>
 
@@ -72,6 +91,9 @@
       <p>Prove $\chi(G) \leq l + 1$, where $l$ is the length of a longest path in $G$.</p>
       <section class="resposta">
         <h2>Prova</h2>
+        <p>
+          Na verdade a ideia é $l \geq \chi(G)- 1$
+        </p>
       </section>
 
     </article>
@@ -83,10 +105,115 @@
       <p>Let $G$ be a connected graph, let $x$ be a vertex of $G$, and let $T$ be a spanning tree of $G$ which maximizes the function $F_x(T) := \sum_{v \in V} d_T(x, v)$. Show that $T$ is a $DFS$-tree of $G$.</p>
       <section class="resposta">
         <h2>Prova</h2>
+        <p>
+          Por contrapositiva, vamos supor que $T$ não é uma árvore DFS de $G$. Como nas figuras abaixo:
+        </p>
+        <figure>
+          <img src="img/ex03-G.svg" style="width: 25%">
+          <img src="img/ex03-T.svg" style="width: 25%">
+        </figure>
+        <p>
+          Vamos somar as distâncias de todos os vértices de $T$ até o vértice raiz $x$.
+        </p>
+        <table>
+          <thead>
+            <th>$v_n$</th>
+            <th>$d(x,v)$</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$v_1$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>$v_2$</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>$v_3$</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>$v_4$</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>$v_5$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>$v_6$</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td>$ \sum_{v \in V} d(x,v) =$</td>
+            <td>11</td>
+          </tfoot>
+        </table>
+        <p>
+          De acordo com o <a href="#thm1">Teorema 6.6</a>, existe uma aresta em $G$ entre vértices não relacionados de $T$.
+        </p>
+        <figure>
+          <img src="img/ex03-almostTprime.svg" style="width: 25%">
+        </figure>
+        <p>
+          Seja $u$ e $v$ estes vértices. No exemplo da figura, escolhemos $v_4$ e $v_6$ que atendem o <a href="#thm1">Teorema 6.6</a>.
+        </p>
+        <p>
+          Se adicionarmos à $T$ a aresta $uv$ e removermos uma aresta do ciclo que se formou, que é incidente ao primeiro ancestral em comum com $u$ e $v$, vamos obter uma spanning tree cuja $F_x$ resulta em um valor maior.
+        </p>
+        <figure>
+          <img src="img/ex03-Tprime.svg" style="width: 25%">
+        </figure>
+        <table>
+          <thead>
+            <th>$v_n$</th>
+            <th>$d(x,v)$</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>$v_1$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>$v_2$</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>$v_3$</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>$v_4$</td>
+              <td><strong>3</strong></td>
+            </tr>
+            <tr>
+              <td>$v_5$</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>$v_6$</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td>$ \sum_{v \in V} d(x,v) =$</td>
+            <td><strong>12</strong></td>
+          </tfoot>
+        </table>
       </section>
     
     </article>
   </main>
+  <footer>
+    <ol>
+      <li id="thm1">
+        <strong>Theorem 6.6</strong> Let $T$ be a DFS-tree of a graph $G$. Then every edge of $G$ joins vertices which are related in $T$.
+        <br>  <small>J.A. BONDY & U.S.R. MURTY 2008. Page 142.</small>
+      </li>
+    </ol>
+  </footer>
 
   <script src="../node_modules/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
   <script type="text/x-mathjax-config">

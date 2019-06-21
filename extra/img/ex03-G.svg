@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="240">
+  <g transform="translate(0 -812.362)">
+    <ellipse cx="56.075" cy="984.998" rx="9.857" ry="9.617"/>
+    <text x="-21.935" y="753.503" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0"/>
+    <text x="21.717" y="854.02" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="21.717" y="854.02" font-family="Latin Modern Roman" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">G</tspan>
+    </text>
+    <text x="227.877" y="908.498" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="227.877" y="908.498" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">1</tspan></tspan>
+    </text>
+    <text x="128.955" y="851.997" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="128.955" y="851.997" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">x</tspan>
+    </text>
+    <ellipse cx="136.21" cy="944.998" rx="9.857" ry="9.617"/>
+    <ellipse cx="216.992" cy="984.998" rx="9.857" ry="9.617"/>
+    <ellipse cx="56.075" cy="904.998" rx="9.857" ry="9.617"/>
+    <ellipse cx="216.992" cy="904.998" rx="9.857" ry="9.617"/>
+    <ellipse cx="136.21" cy="864.998" rx="9.857" ry="9.617"/>
+    <ellipse cx="136.21" cy="1024.998" rx="9.857" ry="9.617"/>
+    <text x="227.648" y="988.673" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="227.648" y="988.673" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">2</tspan></tspan>
+    </text>
+    <text x="18.925" y="908.27" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="18.925" y="908.27" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">5</tspan></tspan>
+    </text>
+    <text x="20.981" y="988.673" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="20.981" y="988.673" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">4</tspan></tspan>
+    </text>
+    <text x="138.128" y="968.712" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="138.128" y="968.712" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">6</tspan></tspan>
+    </text>
+    <text x="147.496" y="1038.588" font-family="sans-serif" font-size="40" font-weight="400" letter-spacing="0" style="line-height:125%" word-spacing="0">
+      <tspan x="147.496" y="1038.588" font-family="Latin Modern Roman" font-size="25" font-style="italic" style="-inkscape-font-specification:'Latin Modern Roman, Italic'">v<tspan baseline-shift="sub" font-size="65%">3</tspan></tspan>
+    </text>
+    <path fill="none" stroke="#000" stroke-width="2" d="M136.707 864.715l-.409 80.308M136.707 944.715v80l80-40M216.707 984.715v-80l-80-40"/>
+    <path fill="none" stroke="#000" stroke-width="2" d="M136.707 864.715l-80 40v80l80 40M56.707 904.715l80 40M56.707 984.715l80-40M216.707 984.715l-80-40M216.707 904.715l-80 40"/>
+  </g>
+</svg>
