@@ -34,6 +34,12 @@
       border-bottom: 0;
     }
 
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0 auto;
+      width: 70%;
+    }
   </style>
 </head>
 
@@ -62,28 +68,26 @@
           Vamos supor que por contrapositiva, $G$ não seja hamiltoniano, devemos mostrar então que $G$ contém um $K_{1,3}$ ou $K_{1,3}+e$ como subgrafo induzido.
         </p>
         <p>
-          Seja $C$ o ciclo de maior tamanho em $G$. Como $G$ não é hamiltoniano então existe um vértice $x$ que está fora de $C$ e que é adjacente a algum vértice de $C$, pois $G$ é $2$-conectado.
+          Seja $C$ o ciclo de maior tamanho em $G$. Sejam $x,y \in V(G)$ tal que $y \in C$, $x \notin C$, $xy \in E(G)$, é possível pois $G$ não é hamiltoniano, então existe ao menos um vértice fora de $C$, no caso $x$. E a aresta $xy \in E(G)$, é possível pois $G$ é $2$-conectado.
         </p> 
         
         <p>
-          Seja $y$ o vértice de $C$ no qual $x$ é conectado, observamos que $x$ não é adjacente à $y-$ e $y+$, caso contrário $C$ não seria o maior ciclo em $G$.
+          Seja então $y$ o vértice de $C$ no qual $x$ é conectado, observamos que $x$ não é adjacente à $y-$ e $y+$, caso contrário $C$ não seria o maior ciclo em $G$. Caso $x$ seja adjacente a outros vértices de $C$ que não são $y-$ e $y+$, não haverá um ciclo maior que $C$.
         </p>
         <figure>
-          <img src="img/ex01.svg" alt="x not adjacent to y- and y+" style="width: 20%">
+          <img src="img/ex01.svg" alt="x not adjacent to y- and y+" style="width: 20%">🚫
+          <img src="img/ex01-plusedges.svg" alt="x not adjacent to y- and y+" style="width: 20%">✅
         </figure>
         <p>
-          Caso $y-y+ \notin E(G)$, obtemos um subgrafo induzido $K_{1,3}:= \{x,y,y-,y+\}$.
+          Portanto, o conjunto $\{x,y,y-,y+\}$ induz o subgrafo $K_{1,3}$ (ou $K_{1,3}+e$):
         </p>
-        <p>
-          Caso $y-y+ \in E(G)$, obtemos um subgrafo induzido $K_{1,3}+e:= \{x,y,y-,y+\}$.
-        </p>
-          <figure>
-            <img src="img/k13.svg" alt="x not adjacent to y- and y+" style="width: 25%">
-            <img src="img/k13e.svg" alt="x not adjacent to y- and y+" style="width: 25%">
-          </figure>
+        <figure>
+          <img src="img/k13.svg" alt="x not adjacent to y- and y+" style="width: 20%">
+          <img src="img/k13e.svg" alt="x not adjacent to y- and y+" style="width: 20%">
+        </figure>
       </section>
     </article>
-
+<br><br><br><br>
     <article style="clear: both;">
       <h2>
         Exercise 2.
@@ -92,10 +96,24 @@
       <section class="resposta">
         <h2>Prova</h2>
         <p>
-          Na verdade a ideia é $l \geq \chi(G)- 1$
+          Seja $T$ uma árvore DFS de $G$, com sua raiz dada por $x$.
+        </p>
+        <p>
+          O nível de um vértice $v$ da árvore $T$ é sua distância até a raiz $x$, portanto $l(v)= |xPv|$.
+        </p>
+        <p>
+          Sabemos que qualquer vértice vai estar a distância no máximo $l$ da raiz $x$ pois $l$ é o tamanho do maior caminho no grafo $G$.
+        </p>
+        <p>
+          Como $T$ é uma uma árvore DFS, de acordo com <a href="#thm1">Teorema 6.6</a> não existe aresta de cruzamento em $G$, portanto nenhuma aresta de $G$ pode ligar dois vértices que estão no mesmo nível na árvore, sendo estes então necessariamente vértices não relacionados.
+        </p>
+        <p>
+          Com isto, escolhemos a cor de cada vértice $v$ de $T$ através de $c(v)=l(v)+1$.
+        </p>
+        <p>
+          Como $l$ é comprimento do maior caminho em $G$, por hipótese a árvore $T$ possui no máximo vértices de $l$ nível, portanto as cores para os vértices de $T$ serão $c(v) \in \{ 1,2,\cdots,l,l+1\}$. Fazendo com que $c$ seja uma coloração própria de $G$. Portanto, $\chi(G) \leq l + 1$.
         </p>
       </section>
-
     </article>
 
     <article>
@@ -106,7 +124,7 @@
       <section class="resposta">
         <h2>Prova</h2>
         <p>
-          Por contrapositiva, vamos supor que $T$ não é uma árvore DFS de $G$. Como nas figuras abaixo:
+          Por contradição, vamos supor que $T$ não é uma árvore DFS de $G$. Como nas figuras abaixo:
         </p>
         <figure>
           <img src="img/ex03-G.svg" style="width: 25%">
@@ -115,7 +133,7 @@
         <p>
           Vamos somar as distâncias de todos os vértices de $T$ até o vértice raiz $x$.
         </p>
-        <table>
+        <table style="margin: 0 auto">
           <thead>
             <th>$v_n$</th>
             <th>$d(x,v)$</th>
@@ -152,56 +170,63 @@
           </tfoot>
         </table>
         <p>
-          De acordo com o <a href="#thm1">Teorema 6.6</a>, existe uma aresta em $G$ entre vértices não relacionados de $T$.
+          De acordo com o <a href="#thm1">Teorema 6.6</a>, existe uma aresta em $G$ entre vértices não relacionados em $T$ pois não é DFS. Então existe aresta de cruzamento $e$. 
         </p>
         <figure>
           <img src="img/ex03-almostTprime.svg" style="width: 25%">
         </figure>
         <p>
-          Seja $u$ e $v$ estes vértices. No exemplo da figura, escolhemos $v_4$ e $v_6$ que atendem o <a href="#thm1">Teorema 6.6</a>.
+          Sejam $u$ e $v$ as pontas da aresta de cruzamento, nomeadas de tal forma que $u$ é o vértice com a maior profundidade, isto é, $|uPx| \geq |vPx|$, e $uv \notin E(T)$ porém $uv \in E(G)$. No exemplo da figura, escolhemos $v_6$ e $v_4$ que atendem o <a href="#thm1">Teorema 6.6</a>.
         </p>
         <p>
-          Se adicionarmos à $T$ a aresta $uv$ e removermos uma aresta do ciclo que se formou, que é incidente ao primeiro ancestral em comum com $u$ e $v$, vamos obter uma spanning tree cuja $F_x$ resulta em um valor maior.
+          Se adicionarmos à $T$ a aresta de cruzamento $e = {uv}$ e removermos a aresta entre $v$ e seu vértice pai - isto é, o vértice imediatamente anterior a $v$ no caminho da raiz até $v$ - da árvore (no caso da figura o vértice ancestral é o $v_5$), obtemos uma árvore $T'$ em que o caminho da raiz $x$ até o restante dos vértices é igual ao caminho que existe na árvore T, exceto pelo vértice $v$ e seus descendentes, que tiveram sua distância aumentada em uma unidade.
         </p>
-        <figure>
-          <img src="img/ex03-Tprime.svg" style="width: 25%">
-        </figure>
-        <table>
-          <thead>
-            <th>$v_n$</th>
-            <th>$d(x,v)$</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>$v_1$</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>$v_2$</td>
-              <td>2</td>
-            </tr>
-            <tr>
-              <td>$v_3$</td>
-              <td>3</td>
-            </tr>
-            <tr>
-              <td>$v_4$</td>
-              <td><strong>3</strong></td>
-            </tr>
-            <tr>
-              <td>$v_5$</td>
-              <td>1</td>
-            </tr>
-            <tr>
-              <td>$v_6$</td>
-              <td>2</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <td>$ \sum_{v \in V} d(x,v) =$</td>
-            <td><strong>12</strong></td>
-          </tfoot>
-        </table>
+        <div class="grid">
+          <div>
+            <table>
+              <thead>
+                <th>$v_n$</th>
+                <th>$d(x,v)$</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$v_1$</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>$v_2$</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>$v_3$</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>$v_4$</td>
+                  <td><strong>3</strong></td>
+                </tr>
+                <tr>
+                  <td>$v_5$</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>$v_6$</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <td>$ \sum_{v \in V} d(x,v) =$</td>
+                <td><strong>12</strong></td>
+              </tfoot>
+            </table>
+          </div>
+          <figure>
+            <img src="img/ex03-Tprime.svg">
+          </figure>
+        </div>
+        <p>
+          Com isto conseguimos usar $e$ para obter uma spanning tree $T'$ tal que $F_x(T') \gt F_x(T)$, contradição.
+        </p>
       </section>
     
     </article>
